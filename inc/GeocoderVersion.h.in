@@ -1,0 +1,45 @@
+/** @file GeocoderVersion.h
+ *  @brief The define the module GeocoderVersion
+ *  @author Bobrov A.E.
+ *  @date 11.09.2016
+ */
+#ifndef GEOCODER_GEOCODERVERSION_H_
+#define GEOCODER_GEOCODERVERSION_H_
+
+// std
+#include <string>
+
+namespace geocoder
+{
+namespace version
+{
+inline int getMajor()
+{
+  return @MAJOR@;
+}
+
+inline int getMinor()
+{
+  return @MINOR@;
+}
+
+inline int getBuild()
+{
+  return @BUILD@;
+}
+
+inline std::string getProjectName()
+{
+  return "@ProjectName@";
+}
+
+inline std::string getText()
+{
+  return "@ProjectName@ v.@MAJOR@.@MINOR@.@BUILD@";
+}
+
+}
+}
+
+
+#endif
