@@ -5,19 +5,49 @@ include(version.cmake)
 
 project (${ProjectName})
 
+find_package(Boost 1.55 COMPONENTS log_setup log system thread date_time filesystem program_options REQUIRED)
+
+set (Boost_USE_STATIC_LIBS ON)
+set (Boost_USE_STATIC_RUNTIME ON)
+set (Boost_USE_MULTITHREADED ON)
+
+add_definitions(-DBOOST_LOG_DYN_LINK)
+
 configure_file(
   "${PROJECT_SOURCE_DIR}/inc/GeocoderVersion.h.in"
   "${PROJECT_BINARY_DIR}/GeocoderVersion.h"
   )
 
 include_directories(${PROJECT_BINARY_DIR}
-  inc)
+  inc
+  ${Boost_INCLUDE_DIRS}
+  /usr/include
+  )
+
 
 set (EXECUTABLE_OUTPUT_PATH "../bin")
 
-set (SOURCES 
-  src/main.cpp)
+set (INCLUDES
+  inc
+  ${Boost_INCLUDE_DIRS}
+  /usr/include)
 
-add_executable(${ProjectName} ${SOURCES} src/main.cpp)
+set (SOURCES 
+  src/main.cpp
+  src/libcurl/libcurl.cpp
+  src/logger/config.cpp
+  src/logger/logger.cpp
+  src/utils/parse_cmd.cpp
+  )
+
+set (LIBRARIES
+  pthread
+  curl
+  ${Boost_LIBRARIES}
+  )
+set (CMAKE_CXX_FLAGS "-std=c++1y -Wall")
+add_executable(${ProjectName} ${INCLUDES} ${SOURCES} src/main.cpp)
+target_link_libraries(${ProjectName} ${LIBRARIES})
+
 
 
