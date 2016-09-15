@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+	<logger>
+		<stdout>true</stdout>
+		<!-- время отображаемое в логе (utc, или локальное) -->
+		<time>utc</time>
+		<workdir>I:\Projects\appl\geocoder\geocoder\geocoder\bin\log\</workdir>
+		<filename>geocoder_%Y-%m-%d_%H-%M-%S.%N.log</filename>
+		<rotation>
+			<!-- type=time,size-->
+			<type>time</type>
+			<!-- seconds -->
+			<period>3600</period>
+			<!-- размер файла, для size в МБ -->
+			<size>10</size>
+		</rotation>
+		<attributes>
+			<threadid>true</threadid>
+			<processid>true</processid>
+		</attributes>
+	</logger>
+  <geocoders>
+    <geocoder>
+      <name>yandex</name>
+      <connection>
+        <url>https://geocode-maps.yandex.ru/1.x/?geocode=</url>
+        <timeout>100</timeout>              <!-- sec -->
+        <conntimeout>100</conntimeout>      <!-- sec -->
+        <verbose>true</verbose>
+      </connection>
+    </geocoder>
+  </geocoders>
+</document>
