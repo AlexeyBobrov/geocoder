@@ -34,10 +34,14 @@ set (INCLUDES
 
 set (SOURCES 
   src/main.cpp
-  src/libcurl/libcurl.cpp
-  src/logger/config.cpp
-  src/logger/logger.cpp
+  src/utils/libcurl/libcurl.cpp
+  src/utils/logger/config.cpp
+  src/utils/logger/logger.cpp
+  src/geo/geocoderbase.cpp
+  src/geo/geoyandex.cpp
+  src/geo/geopool.cpp
   src/utils/parse_cmd.cpp
+  src/utils/utils.cpp
   )
 
 set (LIBRARIES

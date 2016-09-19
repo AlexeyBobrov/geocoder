@@ -4,7 +4,7 @@
 		<stdout>true</stdout>
 		<!-- время отображаемое в логе (utc, или локальное) -->
 		<time>utc</time>
-		<workdir>I:\Projects\appl\geocoder\geocoder\geocoder\bin\log\</workdir>
+    <workdir>/home/alexey/projects/appl/geocoder/geocoder/bin/log/</workdir>
 		<filename>geocoder_%Y-%m-%d_%H-%M-%S.%N.log</filename>
 		<rotation>
 			<!-- type=time,size-->
@@ -26,7 +26,7 @@
         <url>https://geocode-maps.yandex.ru/1.x/?geocode=</url>
         <timeout>100</timeout>              <!-- sec -->
         <conntimeout>100</conntimeout>      <!-- sec -->
-        <verbose>true</verbose>
+        <verbose>false</verbose>
       </connection>
     </geocoder>
   </geocoders>

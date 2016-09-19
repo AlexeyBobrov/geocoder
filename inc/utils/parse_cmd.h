@@ -20,13 +20,14 @@ namespace utils
   * @param argc - number argv
   * @param argv - command line
   * @param [out] config_filename- configuration filename (required)
-  * @param [out] address_filename - file address (optional)
   * @param [out] address - address (optional)
+  * @param [out] addr_filename - file with address
+  * @param [out] outfile - output file (optional)
   * @return true - if success parse command line, else = false
   */
 bool parseCmd(int argc, char *argv[], boost::filesystem::path &config_filename, 
-  boost::filesystem::path &address_filename,
-  std::string &address);
+  std::string &address, boost::filesystem::path &addr_filename, 
+  boost::filesystem::path &outfile);
 }
 }
 

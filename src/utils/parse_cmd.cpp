@@ -21,7 +21,9 @@ namespace utils
 {
 //--------------------------------------------------------------------------------------------
 bool parseCmd(int argc, char *argv[], boost::filesystem::path &config_filename, 
-  boost::filesystem::path &address_filename, std::string &address)
+  std::string &address, 
+  boost::filesystem::path &addr_filename,
+  boost::filesystem::path &outfile)
 {
   namespace bp = boost::program_options;
 
@@ -33,13 +35,15 @@ bool parseCmd(int argc, char *argv[], boost::filesystem::path &config_filename,
   std::string config;
   std::string address_fname;
   std::string addr;
+  std::string output;
 
   option_desc.add_options()
     ("help,h", "Display the program usage and exit")
     ("version,v", "Display the program version and exit")
     ("config,c", bp::value<std::string>(&config)->required(), "Configuration file name (required)")
-    ("addr_fname,i", bp::value<std::string>(&address_fname), "address file name (optional)")
-    ("address,a", bp::value<std::string>(&addr), "address (optional)");
+    ("addr_file,A", bp::value<std::string>(&address_fname), "Address file name (optional)")
+    ("address,a", bp::value<std::string>(&addr), "address (optional)")
+    ("output,o", bp::value<std::string>(&output), "output file (optional)");
 
   bp::variables_map options;
   bp::store(bp::command_line_parser(argc, argv).options(option_desc).run(), options);
@@ -58,7 +62,8 @@ bool parseCmd(int argc, char *argv[], boost::filesystem::path &config_filename,
   bp::notify(options);
 
   config_filename = { config };
-  address_filename = { address_fname };
+  addr_filename = { address_fname };
+  outfile = { output };
   std::swap(address, addr);
 
   return true;
