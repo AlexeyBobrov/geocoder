@@ -159,8 +159,7 @@ int main(int argc, char *argv[])
   // parse cmd
   if (!geocoder::utils::parseCmd(argc, argv, config_filename, addr, addr_filename, out_filename))
   {
-    std::cerr << "[main]: failed parse command line \n";
-    return EXIT_FAILURE;
+    return 0;
   }
 
   if (!fs::exists(out_filename))

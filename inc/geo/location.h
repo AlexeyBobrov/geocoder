@@ -16,6 +16,13 @@ namespace geo
 {
 struct Coordinates
 {
+  /** @brief to gcc >= 5 to delete */
+  Coordinates(double lat = 1000.0, double lon = 1000.0)
+    : latitude(lat)
+    , longitude(lon)
+  {
+  }
+
   double latitude {1000.0};
   double longitude {1000.0};
 
@@ -54,6 +61,38 @@ inline std::string PrecisionToString(Precision p)
       return "other";
     default:
       throw std::runtime_error("[PrecisionToString]: unknown precision type");
+  }
+}
+
+inline Precision StringToPrecision(const std::string &prec)
+{
+  if (prec == "exact")
+  {
+    return Precision::exact;
+  }
+  else if (prec == "number")
+  {
+    return Precision::number;
+  }
+  else if (prec == "nearly")
+  {
+    return Precision::nearly;
+  }
+  else if (prec == "range")
+  {
+    return Precision::range;
+  }
+  else if (prec == "street")
+  {
+    return Precision::street;
+  }
+  else if (prec == "other")
+  {
+    return Precision::other;
+  }
+  else 
+  {
+    throw std::runtime_error("[StringToPrecision]: unknown text precision");
   }
 }
 

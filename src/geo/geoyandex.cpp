@@ -51,7 +51,7 @@ Precision textToPrecision(const std::string &precision)
   {
     return Precision::number;
   }
-  else if (precision == "nearly")
+  else if (precision == "near")
   {
     return Precision::nearly;
   }
@@ -114,7 +114,9 @@ protected:
           coord.latitude = std::stof(spl_coord.at(1));         
 
           Location loc;
+        
           loc.line = data["AddressLine"];
+
           loc.country = data["CountryName"];
           loc.region = data["AdministrativeAreaName"];
           loc.district = data["SubAdministrativeAreaName"];
@@ -124,6 +126,8 @@ protected:
           loc.house = data["PremiseNumber"];
           loc.coord = coord;
           loc.precision = textToPrecision(data["precision"]);
+
+          
 
           answer.locations.push_back(std::move(loc));
 

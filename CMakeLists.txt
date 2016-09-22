@@ -5,7 +5,7 @@ include(version.cmake)
 
 project (${ProjectName})
 
-find_package(Boost 1.55 COMPONENTS log_setup log system thread date_time filesystem program_options REQUIRED)
+find_package(Boost 1.55 COMPONENTS log_setup log system thread date_time filesystem program_options unit_test_framework REQUIRED)
 
 set (Boost_USE_STATIC_LIBS ON)
 set (Boost_USE_STATIC_RUNTIME ON)
@@ -20,6 +20,7 @@ configure_file(
 
 include_directories(${PROJECT_BINARY_DIR}
   inc
+  test
   ${Boost_INCLUDE_DIRS}
   /usr/include
   )
@@ -29,11 +30,11 @@ set (EXECUTABLE_OUTPUT_PATH "../bin")
 
 set (INCLUDES
   inc
+  test
   ${Boost_INCLUDE_DIRS}
   /usr/include)
 
 set (SOURCES 
-  src/main.cpp
   src/utils/libcurl/libcurl.cpp
   src/utils/logger/config.cpp
   src/utils/logger/logger.cpp
@@ -44,6 +45,12 @@ set (SOURCES
   src/utils/utils.cpp
   )
 
+set (SOURCES_TEST 
+  ${SOURCES}
+  test/test_geocoder.cpp
+  test/test_utils.cpp
+  )
+
 set (LIBRARIES
   pthread
   curl
@@ -52,6 +59,9 @@ set (LIBRARIES
 set (CMAKE_CXX_FLAGS "-std=c++1y -Wall")
 add_executable(${ProjectName} ${INCLUDES} ${SOURCES} src/main.cpp)
 target_link_libraries(${ProjectName} ${LIBRARIES})
+
+add_executable(${ProjectName}_test ${INCLUDES} ${SOURCES_TEST} test/test_main.cpp)
+target_link_libraries(${ProjectName}_test ${LIBRARIES})
 
 
 

@@ -49,7 +49,6 @@ bool parseCmd(int argc, char *argv[], boost::filesystem::path &config_filename,
   bp::store(bp::command_line_parser(argc, argv).options(option_desc).run(), options);
   if (options.empty() || options.count("help"))
   {
-    std::cerr << "Usage: " << argv[0] << " --config=configuration-file" << std::endl << std::endl;
     std::cerr << option_desc << std::endl;
     return false;
   }
