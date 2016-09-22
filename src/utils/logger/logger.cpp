@@ -4,7 +4,7 @@
  *  @date 12.09.2016
  */
 // declare
-#include "logger/logger.h"
+#include "utils/logger/logger.h"
 
 // std
 #include <memory>
@@ -31,15 +31,17 @@
 #include <boost/utility/empty_deleter.hpp>
 
 // this
-#include "logger/config.h"
+#include "utils/logger/config.h"
 
-BOOST_LOG_GLOBAL_LOGGER_INIT(geo_logger, geocoder::logger::SeverityLogger)
+BOOST_LOG_GLOBAL_LOGGER_INIT(geo_logger, geocoder::utils::logger::SeverityLogger)
 {
-  geocoder::logger::SeverityLogger lg;
+  geocoder::utils::logger::SeverityLogger lg;
   return lg;
 }
 
 namespace geocoder
+{
+namespace utils
 {
 namespace logger
 {
@@ -232,5 +234,6 @@ void Logger::initFromFile(const boost::filesystem::path &filename)
   initLog(conf);
 }
 //-------------------------------------------------------------------------------------------- 
+}
 }
 }

@@ -11,7 +11,7 @@
 
 namespace geocoder
 {
-namespace common
+namespace utils
 {
 namespace logger
 {

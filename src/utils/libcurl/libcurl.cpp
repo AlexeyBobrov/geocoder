@@ -4,7 +4,7 @@
   * @date 16.07.2016
   */
 // this
-#include "libcurl/libcurl.h"
+#include "utils/libcurl/libcurl.h"
 
 // std
 #include <memory>
@@ -21,7 +21,7 @@
 
 namespace geocoder
 {
-namespace common
+namespace utils
 {
 namespace curl
 {

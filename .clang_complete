@@ -1,5 +1,8 @@
+-Ibuild/
 -Iinc/
--Iinc/libcurl/
--Iinc/logger/
+-Iinc/utils/libcurl/
+-Iinc/utils/logger/
 -Iinc/utils/
+-Iinc/geo/
+-Itest/
 

@@ -3,8 +3,8 @@
  *  @author Bobrov A.E.
  *  @date 12.09.2016
  */
-#ifndef GEOCODER_LOGGER_LOGGER_H_
-#define GEOCODER_LOGGER_LOGGER_H_
+#ifndef GEOCODER_UTILS_LOGGER_LOGGER_H_
+#define GEOCODER_UTILS_LOGGER_LOGGER_H_
 
 // Boost
 // logger
@@ -15,6 +15,8 @@
 #include <boost/filesystem.hpp>
 
 namespace geocoder
+{
+namespace utils
 {
 namespace logger
 {
@@ -42,9 +44,9 @@ public:
 };
 }
 }
+}
 
-//BOOST_LOG_INLINE_GLOBAL_LOGGER_DEFAULT(geo_logger, geocoder::logger::SeverityLogger)
-BOOST_LOG_GLOBAL_LOGGER(geo_logger, geocoder::logger::SeverityLogger)
+BOOST_LOG_GLOBAL_LOGGER(geo_logger, geocoder::utils::logger::SeverityLogger)
 
 
     

@@ -3,8 +3,8 @@
   * @author Bobrov A.E.
   * @date 16.07.2016
   */
-#ifndef GEOCODER_COMMON_SRC_CURL_LIBCURL_H_
-#define GEOCODER_COMMON_SRC_CURL_LIBCURL_H_
+#ifndef GEOCODER_UTILS_LIBCURL_LIBCURL_H_
+#define GEOCODER_UTILS_LIBCURL_LIBCURL_H_
 
 // std
 #include <memory>
@@ -17,7 +17,7 @@
 
 namespace geocoder
 {
-namespace common
+namespace utils
 {
 namespace curl
 {

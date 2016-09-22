@@ -17,6 +17,8 @@
 
 namespace geocoder
 {
+namespace utils
+{
 namespace logger
 {
 namespace config
@@ -66,6 +68,7 @@ struct Configuration
 
 /** @brief read configuration from file */
 Configuration readFile(const boost::filesystem::path &filename);
+}
 }
 }
 }

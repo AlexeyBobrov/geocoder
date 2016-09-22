@@ -14,9 +14,11 @@
 #include <stdexcept>
 
 // this
-#include "logger/config.h"
+#include "utils/logger/config.h"
 
 namespace geocoder
+{
+namespace utils
 {
 namespace logger
 {
@@ -115,6 +117,7 @@ Configuration readFile(const boost::filesystem::path &filename)
   }
 }
 //---------------------------------------------------------------------------------------------------------
+}
 }
 }
 }
