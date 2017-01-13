@@ -45,6 +45,7 @@ set (SOURCES
   src/utils/utils.cpp
   )
 
+MESSAGE("${Boost_LIBRARIES}")
 set (SOURCES_TEST 
   ${SOURCES}
   test/test_geocoder.cpp
@@ -56,7 +57,7 @@ set (LIBRARIES
   curl
   ${Boost_LIBRARIES}
   )
-set (CMAKE_CXX_FLAGS "-std=c++1y -Wall")
+set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -stdlib=libc++ -std=c++14 -Wall")
 add_executable(${ProjectName} ${INCLUDES} ${SOURCES} src/main.cpp)
 target_link_libraries(${ProjectName} ${LIBRARIES})
 
