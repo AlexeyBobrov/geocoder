@@ -29,8 +29,10 @@ using DataSet = std::vector<LocationLine>;
 
 BOOST_AUTO_TEST_SUITE(test_geocoder)
 
+
 BOOST_AUTO_TEST_CASE(test_geopool)
 {
+  
   namespace fs = boost::filesystem;
   // read addrs from file
   fs::path addr_file {"../test/addrs.txt"};
@@ -49,6 +51,7 @@ BOOST_AUTO_TEST_CASE(test_geopool)
 
   geocoder::geo::GeoPool pool(document);
 
+  
   for (const auto &i: addrs)
   {
     auto ret = pool.geocode(i.first);
@@ -78,8 +81,7 @@ BOOST_AUTO_TEST_CASE(test_geopool)
 
     BOOST_TEST_MESSAGE("successfully check request '" << i.first << "'");
   }
-
+  
 }
-
 
 BOOST_AUTO_TEST_SUITE_END()

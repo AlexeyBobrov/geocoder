@@ -12,6 +12,7 @@ set (Boost_USE_STATIC_RUNTIME ON)
 set (Boost_USE_MULTITHREADED ON)
 
 add_definitions(-DBOOST_LOG_DYN_LINK)
+#add_definitions(-DBOOST_TEST_DYN_LINK)
 
 configure_file(
   "${PROJECT_SOURCE_DIR}/inc/GeocoderVersion.h.in"
@@ -22,17 +23,18 @@ include_directories(${PROJECT_BINARY_DIR}
   inc
   test
   ${Boost_INCLUDE_DIRS}
-  /usr/include
   )
 
+message("${Boost_INCLUDE_DIRS}")
+message("${Boost_LIBRARIES}")
+message("${Boost_LIBRARY_DIRS}")
 
 set (EXECUTABLE_OUTPUT_PATH "../bin")
 
 set (INCLUDES
   inc
   test
-  ${Boost_INCLUDE_DIRS}
-  /usr/include)
+  ${Boost_INCLUDE_DIRS})
 
 set (SOURCES 
   src/utils/libcurl/libcurl.cpp
@@ -56,7 +58,10 @@ set (LIBRARIES
   curl
   ${Boost_LIBRARIES}
   )
-set (CMAKE_CXX_FLAGS "-std=c++1y -Wall")
+
+message("${LIBRARIES}")
+
+set (CMAKE_CXX_FLAGS "-std=c++1y -stdlib=libc++ -Wall -Wpedantic -Wextra") 
 add_executable(${ProjectName} ${INCLUDES} ${SOURCES} src/main.cpp)
 target_link_libraries(${ProjectName} ${LIBRARIES})
 

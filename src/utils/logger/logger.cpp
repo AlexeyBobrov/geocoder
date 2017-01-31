@@ -156,6 +156,7 @@ file_sink_ptr_t createFileSink(const config::Configuration &conf)
   fs::path filename{conf.workdir};
   filename /= conf.filename;
 
+  std::cout << __PRETTY_FUNCTION__ << ": " << filename << std::endl;
   using file_text_backend_t = sinks::text_file_backend;
   using file_text_backend_ptr_t = boost::shared_ptr<file_text_backend_t>;
 
