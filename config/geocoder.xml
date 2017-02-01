@@ -4,7 +4,8 @@
 		<stdout>true</stdout>
 		<!-- время отображаемое в логе (utc, или локальное) -->
 		<time>utc</time>
-    <workdir>/home/alexey/projects/appl/geocoder/geocoder/bin/log/</workdir>
+    <!--  <workdir>/home/alexey/projects/appl/geocoder/geocoder/bin/log/</workdir -->
+    <workdir>/Users/aleksejbobrov/projects/geocoder/bin/log/</workdir>
 		<filename>geocoder_%Y-%m-%d_%H-%M-%S.%N.log</filename>
 		<rotation>
 			<!-- type=time,size-->
