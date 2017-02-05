@@ -32,6 +32,7 @@
 
 // this
 #include "utils/logger/config.h"
+#include "utils/utils.h"
 
 BOOST_LOG_GLOBAL_LOGGER_INIT(geo_logger, geocoder::utils::logger::SeverityLogger)
 {
@@ -153,9 +154,17 @@ file_sink_ptr_t createFileSink(const config::Configuration &conf)
 {
   namespace fs = boost::filesystem;
   
-  fs::path filename{conf.workdir};
-  filename /= conf.filename;
-
+  fs::path filename;
+  if (fs::exists(conf.workdir))
+  {
+    filename /= conf.workdir;
+    filename /= conf.filename;
+  }
+  else
+  {
+    filename /= fs::current_path();
+    filename /= conf.filename;
+  }
   using file_text_backend_t = sinks::text_file_backend;
   using file_text_backend_ptr_t = boost::shared_ptr<file_text_backend_t>;
 

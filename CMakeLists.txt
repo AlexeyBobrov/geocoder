@@ -12,6 +12,7 @@ set (Boost_USE_STATIC_RUNTIME ON)
 set (Boost_USE_MULTITHREADED ON)
 
 add_definitions(-DBOOST_LOG_DYN_LINK)
+add_definitions(-DBOOST_TEST_DYN_LINK)
 
 configure_file(
   "${PROJECT_SOURCE_DIR}/inc/GeocoderVersion.h.in"
@@ -22,17 +23,14 @@ include_directories(${PROJECT_BINARY_DIR}
   inc
   test
   ${Boost_INCLUDE_DIRS}
-  /usr/include
   )
-
 
 set (EXECUTABLE_OUTPUT_PATH "../bin")
 
 set (INCLUDES
   inc
   test
-  ${Boost_INCLUDE_DIRS}
-  /usr/include)
+  ${Boost_INCLUDE_DIRS})
 
 set (SOURCES 
   src/utils/libcurl/libcurl.cpp
@@ -45,7 +43,6 @@ set (SOURCES
   src/utils/utils.cpp
   )
 
-MESSAGE("${Boost_LIBRARIES}")
 set (SOURCES_TEST 
   ${SOURCES}
   test/test_geocoder.cpp
@@ -57,12 +54,18 @@ set (LIBRARIES
   curl
   ${Boost_LIBRARIES}
   )
-set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -stdlib=libc++ -std=c++14 -Wall")
+
+if ("${CMAKE_CXX_COMPILER_ID}" STREQUAL "Clang")
+  set (CMAKE_CXX_FLAGS "-std=c++1y -stdlib=libc++ -Wall -Wextra")
+elseif ("${CMAKE_CXX_COMPILER_ID}" STREQUAL "GNU")
+  set (CMAKE_CXX_FLAGS "-std=c++14 -Wall")
+else()
+  message(FATAL_ERROR "Unknown compiler, compiler id = ${CMAKE_CXX_COMPILER_ID}")
+endif()
+
 add_executable(${ProjectName} ${INCLUDES} ${SOURCES} src/main.cpp)
 target_link_libraries(${ProjectName} ${LIBRARIES})
 
 add_executable(${ProjectName}_test ${INCLUDES} ${SOURCES_TEST} test/test_main.cpp)
 target_link_libraries(${ProjectName}_test ${LIBRARIES})
-
-
 
