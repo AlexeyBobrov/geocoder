@@ -30,5 +30,23 @@ std::string generateFileName(const std::string &prefix, const std::string &ext,
   return filename.str();    
 }
 //-------------------------------------------------------------------------------------------- 
+boost::filesystem::path getRealFileName(const boost::filesystem::path& fileName)
+{
+  namespace fs = boost::filesystem;
+  
+  fs::path result;
+  if (!fs::exists(fileName.relative_path()))
+  {
+    result = fs::current_path();
+    result /= fileName.filename();
+  }
+  else
+  {
+    result = fileName;
+  }
+
+  return result;
+}
+//---------------------------------------------------------------------------------------------
 }
 }

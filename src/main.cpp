@@ -39,32 +39,44 @@ Addresses readFromFile(const boost::filesystem::path &filename)
   return result;
 }
 
+/*
 // geocoding addrs
 Answers geocoding(const Addresses &addrs, const boost::property_tree::ptree &conf)
 {
   auto &logger = geo_logger::get();
   using geocoder::utils::logger::Severity;
 
-  BOOST_LOG_SEV(logger, Severity::info) << "[geocoding]: Start geocode addresses '" << addrs.size() << "'";
+  for (const auto &i: addrs)
+  {
+    BOOST_LOG_SEV(logger, Severity::debug) << "[geocoding]: " << i;
+  }
 
   const auto size = addrs.size();
-  constexpr auto maxthread = 2;
+  auto maxthread = (size > 1) ? 2 : 1;
 
   // conunt address on thread
-  const auto addr_per_thr = size / maxthread;
+  const auto addr_per_thr = std::ceil(size / maxthread);
   auto begin_it = std::begin(addrs);
-
+  BOOST_LOG_SEV(logger, Severity::debug) << "[geocoding]: addr_per_thr = " << addr_per_thr;
+  BOOST_LOG_SEV(logger, Severity::debug) << "[geocoding]: maxthread = " << maxthread;
   std::vector<std::future<Answers>> futures;
   
   for (std::size_t i = 0; i < maxthread; ++i)
   {
+    if (std::cend(addrs) == begin_it)
+    {
+      break;
+    }
     const auto dist = std::distance(begin_it, std::end(addrs));
-    const auto d = (dist < addr_per_thr) ? dist : addr_per_thr;
-    
+    BOOST_LOG_SEV(logger, Severity::debug) << "[geocoding]: dist = '" << dist << "'";
+    const auto d = (dist >= addr_per_thr) ? dist : addr_per_thr;
+    BOOST_LOG_SEV(logger, Severity::debug) << "[geocoding]: d = '" << d << "'";
+
     auto it = begin_it;
     std::advance(it, d);
     
     Addresses tmp {begin_it, it};
+    begin_it = it++;
       
     auto ret = std::async(std::launch::async, [tmp = std::move(tmp), conf]()
         {
@@ -77,6 +89,8 @@ Answers geocoding(const Addresses &addrs, const boost::property_tree::ptree &con
             try
             {
               auto ret = geo.geocode(i);
+              auto &logger = geo_logger::get();
+              BOOST_LOG_SEV(logger, Severity::debug) << "[geocoding]: geocode address '" << i << "'";
               result.push_back(std::move(ret));
             }
             catch (const std::exception &err)
@@ -107,6 +121,70 @@ Answers geocoding(const Addresses &addrs, const boost::property_tree::ptree &con
     {
       BOOST_LOG_SEV(logger, Severity::error) << "[geocoding]: failed waiting futures '" << err.what() << "'";
     }
+  }
+
+  return result;
+}
+*/
+
+Answers geocode(const Addresses &addrs, const boost::property_tree::ptree &conf)
+{
+  auto &logger = geo_logger::get();
+  using geocoder::utils::logger::Severity;
+  
+  BOOST_LOG_SEV(logger, Severity::info) << "[geocode]: Start geocoding.";
+
+  const auto maxthreads = (addrs.size() > 1) ? static_cast<std::size_t>(2) : static_cast<std::size_t>(1);
+  const auto addr_per_thread = std::ceil(static_cast<float>(addrs.size()) 
+      / static_cast<float>(maxthreads));
+
+  auto start_it = std::cbegin(addrs);
+
+  Answers result;
+  std::vector<std::future<Answers>> futures;
+
+  for (std::size_t i = 0; i < maxthreads; ++i)
+  {
+    const auto dist = std::distance(start_it, std::cend(addrs));
+    if (dist <= 0)
+    {
+      break;
+    }
+
+    const auto count_addrs = (dist > addr_per_thread) ? addr_per_thread : dist;
+    auto begin_it = start_it;
+    std::advance(start_it, count_addrs);
+
+    Addresses tmp{begin_it, start_it};
+    
+    auto fut = std::async(std::launch::async, [tmp = std::move(tmp), conf]
+        {
+          auto &logger = geo_logger::get();
+          geocoder::geo::GeoPool pool(conf);
+          Answers answers;
+          for (const auto &i: tmp)
+          {
+            try
+            { 
+              auto answer = pool.geocode(i);
+              answers.push_back(answer);
+            }
+            catch (const std::exception& err)
+            {
+              BOOST_LOG_SEV(logger, Severity::error) << "[geocode] Failed geocode '" << i << "'"; 
+            }
+          }
+
+          return answers;
+        });
+    
+    futures.push_back(std::move(fut));
+  }
+  
+  for (auto &i: futures)
+  {
+    auto answers = i.get();
+    result.insert(std::cend(result), std::cbegin(answers), std::cend(answers));
   }
 
   return result;
@@ -162,24 +240,19 @@ int main(int argc, char *argv[])
     return 0;
   }
 
-  if (!fs::exists(out_filename))
-  {
-    const auto name = geocoder::utils::generateFileName("geocoder", "dat");
-    
-    out_filename = fs::current_path();
-    out_filename /= name;
-  }
+  const auto config = geocoder::utils::getRealFileName(config_filename);
+  const auto file_result = geocoder::utils::getRealFileName(out_filename);
 
   // init logger
-  geocoder::utils::logger::Logger::initFromFile(config_filename);
+  geocoder::utils::logger::Logger::initFromFile(config);
 
   auto &logger = geo_logger::get();
   using geocoder::utils::logger::Severity;
 
   BOOST_LOG_SEV(logger, Severity::info) << "[main]: Start '" << geocoder::version::getText() << "'";
-  BOOST_LOG_SEV(logger, Severity::info) << "[main]: config filename = '" << config_filename << "'";
+  BOOST_LOG_SEV(logger, Severity::info) << "[main]: config filename = '" << config << "'";
   BOOST_LOG_SEV(logger, Severity::info) << "[main]: address filename = '" << addr_filename << "'";
-  BOOST_LOG_SEV(logger, Severity::info) << "[main]: out filename = '" << out_filename << "'";
+  BOOST_LOG_SEV(logger, Severity::info) << "[main]: out filename = '" << file_result << "'";
   BOOST_LOG_SEV(logger, Severity::info) << "[main]: address = '" << addr << "'";
  
 
@@ -188,19 +261,18 @@ int main(int argc, char *argv[])
     // read config
     namespace pt = boost::property_tree;
     pt::ptree document;
-    pt::read_xml(config_filename.string(), document);
+    pt::read_xml(config.string(), document);
    
-    
     if (!addr.empty() && fs::exists(addr_filename))
     {
       BOOST_LOG_SEV(logger, Severity::fatal) << "[main]: Ambiguity parameters -a or -A";
       return EXIT_FAILURE;
     }
 
-
     Addresses addrs;
     if (!addr.empty())
     {
+      BOOST_LOG_SEV(logger, Severity::debug) << "[main]: address '" << addr << "'";
       addrs.push_back(addr);
     }
     else if (fs::exists(addr_filename))
@@ -209,8 +281,8 @@ int main(int argc, char *argv[])
       std::swap(addrs, addr_from_file);
     }
 
-    auto result = geocoding(addrs, document);
-    print(out_filename, result);
+    auto result = geocode(addrs, document);
+    print(file_result, result);
   }
   catch (const std::exception &err)
   {

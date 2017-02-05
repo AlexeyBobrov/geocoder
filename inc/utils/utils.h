@@ -10,6 +10,7 @@
 #include <string>
 
 // boost
+#include <boost/filesystem.hpp>
 #include <boost/date_time/posix_time/posix_time.hpp>
 
 namespace geocoder
@@ -26,6 +27,12 @@ namespace utils
 std::string generateFileName(const std::string &prefix, const std::string &ext, 
     const boost::posix_time::ptime &t = boost::posix_time::second_clock::universal_time(),
     const std::string &mask = "%Y%m%d_%H%M%S");
+/** @brief get real filename
+ *  @details not exists filename - current directory
+ *  @param filename - filename
+ *  @return real fullname filename
+*/
+boost::filesystem::path getRealFileName(const boost::filesystem::path& filename);
 }
 }
 
