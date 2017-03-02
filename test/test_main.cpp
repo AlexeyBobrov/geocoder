@@ -3,7 +3,6 @@
  * @author Bobrov A.E.
  * @date 20.09.2016
  */
-#define BOOST_TEST_DYN_LINK
 #define BOOST_TEST_MODULE geocoder_test
 
 // boost

@@ -5,14 +5,17 @@ include(version.cmake)
 
 project (${ProjectName})
 
-find_package(Boost 1.55 COMPONENTS log_setup log system thread date_time filesystem program_options unit_test_framework REQUIRED)
-
-set (Boost_USE_STATIC_LIBS ON)
-set (Boost_USE_STATIC_RUNTIME ON)
+set (Boost_USE_STATIC_LIBS OFF)
+set (Boost_USE_STATIC_RUNTIME OFF)
 set (Boost_USE_MULTITHREADED ON)
+set (Boost_NO_SYSTEM_PATHS OFF)
+set (BOOST_INCLUDEDIR "/opt/local/include")
+set (BOOST_LIBRARYDIR "/opt/local/lib")
 
 add_definitions(-DBOOST_LOG_DYN_LINK)
 add_definitions(-DBOOST_TEST_DYN_LINK)
+
+find_package(Boost 1.55 COMPONENTS log_setup log system thread date_time filesystem program_options unit_test_framework REQUIRED)
 
 configure_file(
   "${PROJECT_SOURCE_DIR}/inc/GeocoderVersion.h.in"
