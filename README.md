@@ -1,5 +1,5 @@
-geocoder util. 
-geocoding from file or command line. 
+geocoder util</br>
+geocoding from file or command line</br>
 Usage:  
 Allowed options:  
 &nbsp;&nbsp;&nbsp;&nbsp;-h [ --help ]          Display the program usage and exit.  
