@@ -41,6 +41,7 @@ class Logger final
 public:
  static void init();
  static void initFromFile(const boost::filesystem::path &filename);
+ ~Logger();
 };
 }
 }

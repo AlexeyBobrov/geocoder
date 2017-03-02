@@ -254,7 +254,6 @@ int main(int argc, char *argv[])
   BOOST_LOG_SEV(logger, Severity::info) << "[main]: address filename = '" << addr_filename << "'";
   BOOST_LOG_SEV(logger, Severity::info) << "[main]: out filename = '" << file_result << "'";
   BOOST_LOG_SEV(logger, Severity::info) << "[main]: address = '" << addr << "'";
- 
 
   try
   { 
@@ -291,5 +290,7 @@ int main(int argc, char *argv[])
   }
 
   BOOST_LOG_SEV(logger, Severity::info) << "[main]: complete geocoder.";
+  boost::log::core::get()->remove_all_sinks();
+  
   return 0;
 }

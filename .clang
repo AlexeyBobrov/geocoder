@@ -1,0 +1,5 @@
+-I.
+-I/opt/local/include
+-Ibuild/
+-Isrc/
+-Iinc/
