@@ -39,98 +39,11 @@ Addresses readFromFile(const boost::filesystem::path &filename)
   return result;
 }
 
-/*
-// geocoding addrs
-Answers geocoding(const Addresses &addrs, const boost::property_tree::ptree &conf)
-{
-  auto &logger = geo_logger::get();
-  using geocoder::utils::logger::Severity;
-
-  for (const auto &i: addrs)
-  {
-    BOOST_LOG_SEV(logger, Severity::debug) << "[geocoding]: " << i;
-  }
-
-  const auto size = addrs.size();
-  auto maxthread = (size > 1) ? 2 : 1;
-
-  // conunt address on thread
-  const auto addr_per_thr = std::ceil(size / maxthread);
-  auto begin_it = std::begin(addrs);
-  BOOST_LOG_SEV(logger, Severity::debug) << "[geocoding]: addr_per_thr = " << addr_per_thr;
-  BOOST_LOG_SEV(logger, Severity::debug) << "[geocoding]: maxthread = " << maxthread;
-  std::vector<std::future<Answers>> futures;
-  
-  for (std::size_t i = 0; i < maxthread; ++i)
-  {
-    if (std::cend(addrs) == begin_it)
-    {
-      break;
-    }
-    const auto dist = std::distance(begin_it, std::end(addrs));
-    BOOST_LOG_SEV(logger, Severity::debug) << "[geocoding]: dist = '" << dist << "'";
-    const auto d = (dist >= addr_per_thr) ? dist : addr_per_thr;
-    BOOST_LOG_SEV(logger, Severity::debug) << "[geocoding]: d = '" << d << "'";
-
-    auto it = begin_it;
-    std::advance(it, d);
-    
-    Addresses tmp {begin_it, it};
-    begin_it = it++;
-      
-    auto ret = std::async(std::launch::async, [tmp = std::move(tmp), conf]()
-        {
-          geocoder::geo::GeoPool geo(conf);
-          
-          Answers result;
-
-          for (const auto &i: tmp)
-          {
-            try
-            {
-              auto ret = geo.geocode(i);
-              auto &logger = geo_logger::get();
-              BOOST_LOG_SEV(logger, Severity::debug) << "[geocoding]: geocode address '" << i << "'";
-              result.push_back(std::move(ret));
-            }
-            catch (const std::exception &err)
-            {
-              auto &logger = geo_logger::get();
-              BOOST_LOG_SEV(logger, Severity::warning) << "[geocoding]: failed geocode '" << err.what() << "'";
-            }
-            
-          }
-
-          return result;
-        });
-      begin_it = ++it;
-      futures.push_back(std::move(ret));
-  }
-
-  // waiting result
-  
-  Answers result;
-  for (auto &i: futures)
-  {
-    try
-    {
-      auto ans = i.get();
-      result.insert(std::end(result), std::begin(ans), std::end(ans));
-    }
-    catch (const std::exception &err)
-    {
-      BOOST_LOG_SEV(logger, Severity::error) << "[geocoding]: failed waiting futures '" << err.what() << "'";
-    }
-  }
-
-  return result;
-}
-*/
-
 Answers geocode(const Addresses &addrs, const boost::property_tree::ptree &conf)
 {
   auto &logger = geo_logger::get();
   using geocoder::utils::logger::Severity;
+  
   
   BOOST_LOG_SEV(logger, Severity::info) << "[geocode]: Start geocoding.";
 

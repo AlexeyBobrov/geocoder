@@ -8,12 +8,21 @@ project (${ProjectName})
 set (Boost_USE_STATIC_LIBS OFF)
 set (Boost_USE_STATIC_RUNTIME OFF)
 set (Boost_USE_MULTITHREADED ON)
-set (Boost_NO_SYSTEM_PATHS OFF)
+set (Boost_NO_SYSTEM_PATHS ON)
+#set (BOOST_INCLUDEDIR "/home/alexey/3rdparty/boost/install/include")
+#set (BOOST_LIBRARYDIR "/home/alexey/3rdparty/boost/install/lib")
+#set (BOOST_INCLUDEDIR "/opt/local/include")
+#set (BOOST_LIBRARYDIR "/opt/local/lib")
 set (BOOST_INCLUDEDIR "/opt/local/include")
-set (BOOST_LIBRARYDIR "/opt/local/lib")
+#set (BOOST_LIBRARYDIR "/opt/local/lib/boost")
+set (BOOST_LIBRARYDIR "/opt/local/lib64")
 
 add_definitions(-DBOOST_LOG_DYN_LINK)
+add_definitions(-DBOOST_ALL_DYN_LINK)
 add_definitions(-DBOOST_TEST_DYN_LINK)
+add_definitions(-DBOOST_ALL_NO_LIB)
+add_definitions(-DCMAKE_EXPORT_COMPILE_COMMANDS)
+
 
 find_package(Boost 1.55 COMPONENTS log_setup log system thread date_time filesystem program_options unit_test_framework REQUIRED)
 
