@@ -1,0 +1,591 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ARCHITECTURE_ID	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	404;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	407;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	410;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	414;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	416;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	418;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	422;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	425;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	428;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	433;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	436;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	439;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	443;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	391;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	394;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	397;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	401;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	403;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	405;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	409;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	412;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	415;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	420;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	423;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	426;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	430;"	d	file:
+Answer	inc/geo/answer.h	/^struct Answer$/;"	s	namespace:geocoder::geo
+AttributesValues	inc/utils/logger/config.h	/^  struct AttributesValues$/;"	s	struct:geocoder::utils::logger::config::Configuration
+BOOST_AUTO_TEST_CASE	test/test_geocoder.cpp	/^BOOST_AUTO_TEST_CASE(test_geopool)$/;"	f
+BOOST_LOG_GLOBAL_LOGGER_INIT	src/utils/logger/logger.cpp	/^BOOST_LOG_GLOBAL_LOGGER_INIT(geo_logger, geocoder::utils::logger::SeverityLogger)$/;"	f
+BOOST_TEST_MODULE	test/test_main.cpp	6;"	d	file:
+CMAKE_BINARY_DIR	build/Makefile	/^CMAKE_BINARY_DIR = \/home\/aleksey\/projects\/appl\/geocoder\/build$/;"	m
+CMAKE_COMMAND	build/Makefile	/^CMAKE_COMMAND = \/usr\/bin\/cmake$/;"	m
+CMAKE_SOURCE_DIR	build/Makefile	/^CMAKE_SOURCE_DIR = \/home\/aleksey\/projects\/appl\/geocoder$/;"	m
+COMPILER_ID	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	101;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	108;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	115;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	122;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	129;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	137;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	142;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	149;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	152;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	155;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	158;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	161;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	176;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	190;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	19;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	200;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	218;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	227;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	230;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	245;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	252;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	270;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	273;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	276;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	42;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	50;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	56;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	62;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	71;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	80;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	94;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	101;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	108;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	115;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	122;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	129;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	137;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	13;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	142;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	149;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	152;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	155;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	170;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	184;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	194;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	19;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	212;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	221;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	224;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	239;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	257;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	260;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	263;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	42;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	50;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	56;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	62;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	71;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	80;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	94;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	103;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	110;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	117;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	124;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	130;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	138;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	144;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	165;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	180;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	191;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	202;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	221;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	233;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	238;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	247;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	24;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	255;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	260;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	43;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	51;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	58;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	64;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	73;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	83;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	88;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	96;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	103;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	110;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	117;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	124;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	130;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	138;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	144;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	159;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	15;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	174;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	185;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	196;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	215;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	227;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	232;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	242;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	247;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	24;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	43;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	51;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	58;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	64;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	73;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	83;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	88;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	96;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	104;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	111;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	118;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	125;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	131;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	139;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	145;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	166;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	181;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	193;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	203;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	222;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	234;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	239;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	248;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	256;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	25;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	261;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	44;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	52;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	59;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	65;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	74;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	84;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	89;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	97;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	104;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	111;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	118;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	125;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	131;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	139;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	145;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	160;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	16;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	175;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	187;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	197;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	216;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	228;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	233;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	243;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	248;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	25;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	44;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	52;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	59;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	65;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	74;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	84;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	89;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	97;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	105;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	112;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	119;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	126;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	133;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	146;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	167;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	182;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	196;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	207;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	210;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	223;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	235;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	240;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	249;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	257;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	262;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	27;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	29;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	46;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	53;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	67;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	76;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	85;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	90;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	98;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	105;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	112;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	119;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	126;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	133;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	146;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	161;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	176;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	190;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	201;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	204;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	217;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	229;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	234;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	244;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	249;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	27;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	29;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	46;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	53;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	67;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	76;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	85;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	90;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	98;"	d	file:
+COMPILER_VERSION_TWEAK	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	173;"	d	file:
+COMPILER_VERSION_TWEAK	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	214;"	d	file:
+COMPILER_VERSION_TWEAK	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	33;"	d	file:
+COMPILER_VERSION_TWEAK	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	167;"	d	file:
+COMPILER_VERSION_TWEAK	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	208;"	d	file:
+COMPILER_VERSION_TWEAK	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	33;"	d	file:
+C_DIALECT	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	516;"	d	file:
+C_DIALECT	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	518;"	d	file:
+C_DIALECT	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	521;"	d	file:
+C_DIALECT	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	523;"	d	file:
+C_DIALECT	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	525;"	d	file:
+Configuration	inc/utils/logger/config.h	/^struct Configuration$/;"	s	namespace:geocoder::utils::logger::config
+Coordinates	inc/geo/location.h	/^  Coordinates(double lat = 1000.0, double lon = 1000.0)$/;"	f	struct:geocoder::geo::Coordinates
+Coordinates	inc/geo/location.h	/^struct Coordinates$/;"	s	namespace:geocoder::geo
+CurlCleaner	src/utils/libcurl/libcurl.cpp	/^auto CurlCleaner(CURL *p)$/;"	f	namespace:geocoder::utils::curl
+CurlGlobalInitializator	src/utils/libcurl/libcurl.cpp	/^  CurlGlobalInitializator()$/;"	f	class:geocoder::utils::curl::final
+CurlListCleaner	src/utils/libcurl/libcurl.cpp	/^auto CurlListCleaner(curl_slist *t)$/;"	f	namespace:geocoder::utils::curl
+DEC	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	447;"	d	file:
+DEC	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	434;"	d	file:
+EQUALS	build/Makefile	/^EQUALS = =$/;"	m
+GEOCODER_COMMON_LOGGER_CONFIG_H_	inc/utils/logger/config.h	7;"	d
+GEOCODER_COMMON_LOGGER_TYPES_H_	inc/utils/logger/types.h	7;"	d
+GEOCODER_GEOCODERVERSION_H_	build/GeocoderVersion.h	7;"	d
+GEOCODER_GEO_ANSWER_H_	inc/geo/answer.h	7;"	d
+GEOCODER_GEO_GEOCODERBASE_H_	inc/geo/geocoderbase.h	7;"	d
+GEOCODER_GEO_GEOPOOL_H_	inc/geo/geopool.h	7;"	d
+GEOCODER_GEO_GEOYANDEX_H_	inc/geo/geoyandex.h	7;"	d
+GEOCODER_GEO_LOCATION_H_	inc/geo/location.h	7;"	d
+GEOCODER_TEST_TEST_UTILS_H_	test/test_utils.h	7;"	d
+GEOCODER_UTILS_LIBCURL_LIBCURL_H_	inc/utils/libcurl/libcurl.h	7;"	d
+GEOCODER_UTILS_LOGGER_LOGGER_H_	inc/utils/logger/logger.h	7;"	d
+GEOCODER_UTILS_PARSE_CMD_H_	inc/utils/parse_cmd.h	7;"	d
+GEOCODER_UTILS_UTILS_H_	inc/utils/utils.h	7;"	d
+GeoPool	src/geo/geopool.cpp	/^GeoPool::GeoPool(const boost::property_tree::ptree &conf)$/;"	f	class:geocoder::geo::GeoPool
+GeoTypeToText	inc/geo/answer.h	/^  static inline std::string GeoTypeToText(GeocoderType type)$/;"	f	class:geocoder::geo::Answer::GeocoderType
+GeoYandex	src/geo/geoyandex.cpp	/^  explicit GeoYandex(const boost::property_tree::ptree &conf)$/;"	f	class:geocoder::geo::final
+GeocoderBase	inc/geo/geocoderbase.h	/^class GeocoderBase$/;"	c	namespace:geocoder::geo
+GeocoderBase	src/geo/geocoderbase.cpp	/^GeocoderBase::GeocoderBase(const boost::property_tree::ptree &conf)$/;"	f	class:geocoder::geo::GeocoderBase
+GeocoderType	inc/geo/answer.h	/^  enum class GeocoderType$/;"	c	struct:geocoder::geo::Answer
+HEX	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	458;"	d	file:
+HEX	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	445;"	d	file:
+ID_VOID_MAIN	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	6;"	d	file:
+Impl	src/geo/geocoderbase.cpp	/^  explicit Impl(const boost::property_tree::ptree &conf)$/;"	f	class:geocoder::geo::final
+Impl	src/geo/geopool.cpp	/^  explicit Impl(const boost::property_tree::ptree &conf)$/;"	f	class:geocoder::geo::final
+Impl	src/utils/libcurl/libcurl.cpp	/^  Impl()$/;"	f	class:geocoder::utils::curl::final
+LibCurl	src/utils/libcurl/libcurl.cpp	/^LibCurl::LibCurl()$/;"	f	class:geocoder::utils::curl::LibCurl
+Location	inc/geo/location.h	/^struct Location$/;"	s	namespace:geocoder::geo
+PLATFORM_ID	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	301;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	304;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	307;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	310;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	313;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	316;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	319;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	322;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	325;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	328;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	331;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	334;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	337;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	340;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	343;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	346;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	349;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	352;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	355;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	358;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	361;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	364;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	367;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	370;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	373;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	377;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	380;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	383;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	386;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	389;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	393;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	288;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	291;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	294;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	297;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	300;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	303;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	306;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	309;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	312;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	315;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	318;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	321;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	324;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	327;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	330;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	333;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	336;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	339;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	342;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	345;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	348;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	351;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	354;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	357;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	360;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	364;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	367;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	370;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	373;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	376;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	380;"	d	file:
+Precision	inc/geo/location.h	/^enum class Precision$/;"	c	namespace:geocoder::geo
+PrecisionToString	inc/geo/location.h	/^inline std::string PrecisionToString(Precision p)$/;"	f	namespace:geocoder::geo
+RM	build/Makefile	/^RM = \/usr\/bin\/cmake -E remove -f$/;"	m
+Rotation	inc/utils/logger/config.h	/^  struct Rotation$/;"	s	struct:geocoder::utils::logger::config::Configuration
+SHELL	build/Makefile	/^SHELL = \/bin\/sh$/;"	m
+SIMULATE_ID	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	163;"	d	file:
+SIMULATE_ID	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	178;"	d	file:
+SIMULATE_ID	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	21;"	d	file:
+SIMULATE_ID	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	157;"	d	file:
+SIMULATE_ID	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	172;"	d	file:
+SIMULATE_ID	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	21;"	d	file:
+SIMULATE_VERSION_MAJOR	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	170;"	d	file:
+SIMULATE_VERSION_MAJOR	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	185;"	d	file:
+SIMULATE_VERSION_MAJOR	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	37;"	d	file:
+SIMULATE_VERSION_MAJOR	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	164;"	d	file:
+SIMULATE_VERSION_MAJOR	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	179;"	d	file:
+SIMULATE_VERSION_MAJOR	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	37;"	d	file:
+SIMULATE_VERSION_MINOR	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	171;"	d	file:
+SIMULATE_VERSION_MINOR	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	186;"	d	file:
+SIMULATE_VERSION_MINOR	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	38;"	d	file:
+SIMULATE_VERSION_MINOR	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	165;"	d	file:
+SIMULATE_VERSION_MINOR	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	180;"	d	file:
+SIMULATE_VERSION_MINOR	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	38;"	d	file:
+STRINGIFY	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	297;"	d	file:
+STRINGIFY	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	284;"	d	file:
+STRINGIFY_HELPER	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	296;"	d	file:
+STRINGIFY_HELPER	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	283;"	d	file:
+SUFFIXES	build/Makefile	/^SUFFIXES =$/;"	m
+Severity	inc/utils/logger/logger.h	/^enum class Severity$/;"	c	namespace:geocoder::utils::logger
+StringToPrecision	inc/geo/location.h	/^inline Precision StringToPrecision(const std::string &prec)$/;"	f	namespace:geocoder::geo
+Time	inc/utils/logger/config.h	/^  enum class Time$/;"	c	struct:geocoder::utils::logger::config::Configuration
+Type	inc/utils/logger/config.h	/^    enum class Type$/;"	c	struct:geocoder::utils::logger::config::Configuration::Rotation
+config	inc/utils/logger/config.h	/^namespace config$/;"	n	namespace:geocoder::utils::logger
+config	src/utils/logger/config.cpp	/^namespace config$/;"	n	namespace:geocoder::utils::logger	file:
+conn_param_	src/geo/geocoderbase.cpp	/^  std::tuple<std::string, std::size_t, std::size_t, bool> conn_param_;$/;"	m	class:geocoder::geo::final	file:
+conntimeout_	src/geo/geocoderbase.cpp	/^  static const std::size_t conntimeout_;$/;"	m	class:geocoder::geo::final	file:
+conntimeout_	src/geo/geocoderbase.cpp	/^const std::size_t GeocoderBase::Impl::conntimeout_ = 100;$/;"	m	class:geocoder::geo::GeocoderBase::Impl	file:
+const	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	10;"	d	file:
+coord	inc/geo/location.h	/^  Coordinates coord;$/;"	m	struct:geocoder::geo::Location
+country	inc/geo/location.h	/^  std::string country;$/;"	m	struct:geocoder::geo::Location
+createDebugSink	src/utils/logger/logger.cpp	/^debug_sink_ptr_t createDebugSink(const config::Configuration &conf)$/;"	f	namespace:geocoder::utils::logger
+createFileSink	src/utils/logger/logger.cpp	/^file_sink_ptr_t createFileSink(const config::Configuration &conf)$/;"	f	namespace:geocoder::utils::logger
+createYandexGeocoder	src/geo/geoyandex.cpp	/^GeocoderPtr createYandexGeocoder(const boost::property_tree::ptree &conf)$/;"	f	namespace:geocoder::geo
+crititcal	inc/utils/logger/logger.h	/^  crititcal,$/;"	m	class:geocoder::utils::logger::Severity
+curl	inc/utils/libcurl/libcurl.h	/^namespace curl$/;"	n	namespace:geocoder::utils
+curl	src/utils/libcurl/libcurl.cpp	/^namespace curl$/;"	n	namespace:geocoder::utils	file:
+curlSetOpt	src/utils/libcurl/libcurl.cpp	/^  void curlSetOpt(std::uint32_t opt, T t, std::string &&source, std::string &&optname)$/;"	f	class:geocoder::utils::curl::final	file:
+curl_	src/geo/geocoderbase.cpp	/^  utils::curl::LibCurl curl_;$/;"	m	class:geocoder::geo::final	file:
+curl_	src/utils/libcurl/libcurl.cpp	/^  CurlPtr curl_;$/;"	m	class:geocoder::utils::curl::final	file:
+curl_list_	src/utils/libcurl/libcurl.cpp	/^  CurlListPtr curl_list_;$/;"	m	class:geocoder::utils::curl::final	file:
+debug	inc/utils/logger/logger.h	/^  debug,$/;"	m	class:geocoder::utils::logger::Severity
+district	inc/geo/location.h	/^  std::string district;$/;"	m	struct:geocoder::geo::Location
+error	inc/utils/logger/logger.h	/^  error,$/;"	m	class:geocoder::utils::logger::Severity
+escapeUrl	src/utils/libcurl/libcurl.cpp	/^  std::string escapeUrl(const std::string &url)$/;"	f	class:geocoder::utils::curl::final
+escapeUrl	src/utils/libcurl/libcurl.cpp	/^std::string LibCurl::escapeUrl(const std::string &url)$/;"	f	class:geocoder::utils::curl::LibCurl
+exact	inc/geo/location.h	/^  exact = 0,$/;"	m	class:geocoder::geo::Precision
+fatal	inc/utils/logger/logger.h	/^  fatal,$/;"	m	class:geocoder::utils::logger::Severity
+features	build/CMakeFiles/feature_tests.c	/^  const char features[] = {"\\n"$/;"	v
+features	build/CMakeFiles/feature_tests.cxx	/^  const char features[] = {"\\n"$/;"	v
+filename	inc/utils/logger/config.h	/^  std::string               filename = "geocoder_%Y-%m-%d_%H-%M-%S.%N.log";$/;"	m	struct:geocoder::utils::logger::config::Configuration
+final	inc/geo/geopool.h	/^class GeoPool final$/;"	c	namespace:geocoder::geo
+final	inc/utils/libcurl/libcurl.h	/^class LibCurl final$/;"	c	namespace:geocoder::utils::curl
+final	inc/utils/logger/logger.h	/^class Logger final$/;"	c	namespace:geocoder::utils::logger
+final	src/geo/geocoderbase.cpp	/^class GeocoderBase::Impl final$/;"	c	namespace:geocoder::geo	file:
+final	src/geo/geopool.cpp	/^class GeoPool::Impl final$/;"	c	namespace:geocoder::geo	file:
+final	src/geo/geoyandex.cpp	/^class GeoYandex final : public GeocoderBase$/;"	c	namespace:geocoder::geo	file:
+final	src/utils/libcurl/libcurl.cpp	/^class CurlGlobalInitializator final$/;"	c	namespace:geocoder::utils::curl	file:
+final	src/utils/libcurl/libcurl.cpp	/^class LibCurl::Impl final$/;"	c	namespace:geocoder::utils::curl	file:
+format	src/utils/logger/logger.cpp	/^void format(const config::Configuration &conf, const log::record_view &record, log::formatting_ostream &os)$/;"	f	namespace:geocoder::utils::logger
+generateFileName	src/utils/utils.cpp	/^std::string generateFileName(const std::string &prefix, const std::string &ext, $/;"	f	namespace:geocoder::utils
+geo	inc/geo/answer.h	/^namespace geo$/;"	n	namespace:geocoder
+geo	inc/geo/geocoderbase.h	/^namespace geo$/;"	n	namespace:geocoder
+geo	inc/geo/geopool.h	/^namespace geo$/;"	n	namespace:geocoder
+geo	inc/geo/geoyandex.h	/^namespace geo$/;"	n	namespace:geocoder
+geo	inc/geo/location.h	/^namespace geo$/;"	n	namespace:geocoder
+geo	src/geo/geocoderbase.cpp	/^namespace geo$/;"	n	namespace:geocoder	file:
+geo	src/geo/geopool.cpp	/^namespace geo$/;"	n	namespace:geocoder	file:
+geo	src/geo/geoyandex.cpp	/^namespace geo$/;"	n	namespace:geocoder	file:
+geocode	src/geo/geocoderbase.cpp	/^GeocoderBase::Result GeocoderBase::geocode(const std::string &address)$/;"	f	class:geocoder::geo::GeocoderBase
+geocode	src/geo/geopool.cpp	/^Answer GeoPool::geocode(const std::string &addr)$/;"	f	class:geocoder::geo::GeoPool
+geocode	src/main.cpp	/^Answers geocode(const Addresses &addrs, const boost::property_tree::ptree &conf)$/;"	f
+geocoder	build/GeocoderVersion.h	/^namespace geocoder$/;"	n
+geocoder	inc/geo/answer.h	/^namespace geocoder$/;"	n
+geocoder	inc/geo/geocoderbase.h	/^namespace geocoder$/;"	n
+geocoder	inc/geo/geopool.h	/^namespace geocoder$/;"	n
+geocoder	inc/geo/geoyandex.h	/^namespace geocoder$/;"	n
+geocoder	inc/geo/location.h	/^namespace geocoder$/;"	n
+geocoder	inc/utils/libcurl/libcurl.h	/^namespace geocoder$/;"	n
+geocoder	inc/utils/logger/config.h	/^namespace geocoder$/;"	n
+geocoder	inc/utils/logger/logger.h	/^namespace geocoder$/;"	n
+geocoder	inc/utils/logger/types.h	/^namespace geocoder$/;"	n
+geocoder	inc/utils/parse_cmd.h	/^namespace geocoder$/;"	n
+geocoder	inc/utils/utils.h	/^namespace geocoder$/;"	n
+geocoder	src/geo/geocoderbase.cpp	/^namespace geocoder$/;"	n	file:
+geocoder	src/geo/geopool.cpp	/^namespace geocoder$/;"	n	file:
+geocoder	src/geo/geoyandex.cpp	/^namespace geocoder$/;"	n	file:
+geocoder	src/utils/libcurl/libcurl.cpp	/^namespace geocoder$/;"	n	file:
+geocoder	src/utils/logger/config.cpp	/^namespace geocoder$/;"	n	file:
+geocoder	src/utils/logger/logger.cpp	/^namespace geocoder$/;"	n	file:
+geocoder	src/utils/parse_cmd.cpp	/^namespace geocoder$/;"	n	file:
+geocoder	src/utils/utils.cpp	/^namespace geocoder$/;"	n	file:
+geocoder	test/test_utils.cpp	/^namespace geocoder$/;"	n	file:
+geocoder	test/test_utils.h	/^namespace geocoder$/;"	n
+geocoders_	src/geo/geopool.cpp	/^  std::vector<GeocoderPtr> geocoders_;$/;"	m	class:geocoder::geo::final	file:
+get	src/geo/geocoderbase.cpp	/^  std::tuple<std::string, long> get(const std::string &addr)$/;"	f	class:geocoder::geo::final
+get	src/geo/geopool.cpp	/^  Answer get(const std::string &addr)$/;"	f	class:geocoder::geo::final
+get	src/utils/libcurl/libcurl.cpp	/^  std::tuple<std::string, long> get(const std::string &url)$/;"	f	class:geocoder::utils::curl::final
+get	src/utils/libcurl/libcurl.cpp	/^std::tuple<std::string, long> LibCurl::get(const std::string &url)$/;"	f	class:geocoder::utils::curl::LibCurl
+getBuild	build/GeocoderVersion.h	/^inline int getBuild()$/;"	f	namespace:geocoder::version
+getMajor	build/GeocoderVersion.h	/^inline int getMajor()$/;"	f	namespace:geocoder::version
+getMinor	build/GeocoderVersion.h	/^inline int getMinor()$/;"	f	namespace:geocoder::version
+getName	src/geo/geocoderbase.cpp	/^  const std::string &getName() const { return name_; }$/;"	f	class:geocoder::geo::final
+getProjectName	build/GeocoderVersion.h	/^inline std::string getProjectName()$/;"	f	namespace:geocoder::version
+getRealFileName	src/utils/utils.cpp	/^boost::filesystem::path getRealFileName(const boost::filesystem::path& fileName)$/;"	f	namespace:geocoder::utils
+getText	build/GeocoderVersion.h	/^inline std::string getText()$/;"	f	namespace:geocoder::version
+house	inc/geo/location.h	/^  std::string house;$/;"	m	struct:geocoder::geo::Location
+impl_	inc/geo/geocoderbase.h	/^  std::unique_ptr<Impl> impl_;$/;"	m	class:geocoder::geo::GeocoderBase
+impl_	inc/geo/geopool.h	/^  std::unique_ptr<Impl> impl_;$/;"	m	class:geocoder::geo::final
+impl_	inc/utils/libcurl/libcurl.h	/^  std::unique_ptr<Impl> impl_;$/;"	m	class:geocoder::utils::curl::final
+info	inc/utils/logger/logger.h	/^  info = 0,$/;"	m	class:geocoder::utils::logger::Severity
+info_arch	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	/^char const* info_arch = "INFO" ":" "arch[" ARCHITECTURE_ID "]";$/;"	v
+info_arch	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_arch = "INFO" ":" "arch[" ARCHITECTURE_ID "]";$/;"	v
+info_compiler	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	/^char const* info_compiler = "INFO" ":" "compiler[" COMPILER_ID "]";$/;"	v
+info_compiler	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_compiler = "INFO" ":" "compiler[" COMPILER_ID "]";$/;"	v
+info_cray	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	/^char const *info_cray = "INFO" ":" "compiler_wrapper[CrayPrgEnv]";$/;"	v
+info_cray	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const *info_cray = "INFO" ":" "compiler_wrapper[CrayPrgEnv]";$/;"	v
+info_language_dialect_default	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	/^const char* info_language_dialect_default =$/;"	v
+info_language_dialect_default	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^const char* info_language_dialect_default = "INFO" ":" "dialect_default["$/;"	v
+info_platform	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	/^char const* info_platform = "INFO" ":" "platform[" PLATFORM_ID "]";$/;"	v
+info_platform	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_platform = "INFO" ":" "platform[" PLATFORM_ID "]";$/;"	v
+info_simulate	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	/^char const* info_simulate = "INFO" ":" "simulate[" SIMULATE_ID "]";$/;"	v
+info_simulate	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_simulate = "INFO" ":" "simulate[" SIMULATE_ID "]";$/;"	v
+info_simulate_version	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	/^char const info_simulate_version[] = {$/;"	v
+info_simulate_version	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const info_simulate_version[] = {$/;"	v
+info_version	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	/^char const info_version[] = {$/;"	v
+info_version	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const info_version[] = {$/;"	v
+init	src/utils/logger/logger.cpp	/^void Logger::init()$/;"	f	class:geocoder::utils::logger::Logger
+initFromFile	src/utils/logger/logger.cpp	/^void Logger::initFromFile(const boost::filesystem::path &filename)$/;"	f	class:geocoder::utils::logger::Logger
+initLog	src/utils/logger/logger.cpp	/^void initLog(const config::Configuration &conf)$/;"	f	namespace:geocoder::utils::logger
+init_attrs	src/utils/logger/logger.cpp	/^void init_attrs(const config::Configuration &conf)$/;"	f	namespace:geocoder::utils::logger
+isInitialization	src/utils/libcurl/libcurl.cpp	/^  bool isInitialization() const { return init_; }$/;"	f	class:geocoder::utils::curl::final
+isValid	inc/geo/location.h	/^  bool isValid() const$/;"	f	struct:geocoder::geo::Coordinates
+line	inc/geo/location.h	/^  std::string line;$/;"	m	struct:geocoder::geo::Location
+locations	inc/geo/answer.h	/^  Locations locations;$/;"	m	class:geocoder::geo::Answer::GeocoderType
+lock_	src/utils/libcurl/libcurl.cpp	/^  std::mutex lock_;$/;"	m	class:geocoder::utils::curl::final	file:
+logger	inc/utils/logger/config.h	/^namespace logger$/;"	n	namespace:geocoder::utils
+logger	inc/utils/logger/logger.h	/^namespace logger$/;"	n	namespace:geocoder::utils
+logger	inc/utils/logger/types.h	/^namespace logger$/;"	n	namespace:geocoder::utils
+logger	src/utils/logger/config.cpp	/^namespace logger$/;"	n	namespace:geocoder::utils	file:
+logger	src/utils/logger/logger.cpp	/^namespace logger$/;"	n	namespace:geocoder::utils	file:
+main	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	/^int main(argc, argv) int argc; char *argv[];$/;"	f
+main	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	/^void main() {}$/;"	f
+main	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^int main(int argc, char* argv[])$/;"	f
+main	build/CMakeFiles/feature_tests.c	/^int main(int argc, char** argv) { (void)argv; return features[argc]; }$/;"	f
+main	build/CMakeFiles/feature_tests.cxx	/^int main(int argc, char** argv) { (void)argv; return features[argc]; }$/;"	f
+main	src/main.cpp	/^int main(int argc, char *argv[])$/;"	f
+name_	src/geo/geocoderbase.cpp	/^  std::string name_;$/;"	m	class:geocoder::geo::final	file:
+nearly	inc/geo/location.h	/^  nearly,$/;"	m	class:geocoder::geo::Precision
+number	inc/geo/location.h	/^  number,$/;"	m	class:geocoder::geo::Precision
+operator bool	src/utils/libcurl/libcurl.cpp	/^  operator bool() const { return init_; }$/;"	f	class:geocoder::utils::curl::final
+parse	src/geo/geoyandex.cpp	/^  virtual Result parse(const std::string &buffer)$/;"	f	class:geocoder::geo::final
+parseCmd	src/utils/parse_cmd.cpp	/^bool parseCmd(int argc, char *argv[], boost::filesystem::path &config_filename, $/;"	f	namespace:geocoder::utils
+place	inc/geo/location.h	/^  std::string place;$/;"	m	struct:geocoder::geo::Location
+post	src/utils/libcurl/libcurl.cpp	/^  std::tuple<std::string, long> post(const std::string &url)$/;"	f	class:geocoder::utils::curl::final
+post	src/utils/libcurl/libcurl.cpp	/^std::tuple<std::string, long> LibCurl::post(const std::string &url)$/;"	f	class:geocoder::utils::curl::LibCurl
+precision	inc/geo/location.h	/^  Precision precision = Precision::other;$/;"	m	struct:geocoder::geo::Location
+print	src/main.cpp	/^void print(const boost::filesystem::path &filename, const Answers &answers)$/;"	f
+processTree	src/geo/geoyandex.cpp	/^void processTree(const boost::property_tree::ptree &pt, GeoData &data)$/;"	f	namespace:geocoder::geo
+process_id	inc/utils/logger/config.h	/^    static const std::string process_id;$/;"	m	struct:geocoder::utils::logger::config::Configuration::AttributesValues
+process_id	src/utils/logger/config.cpp	/^const std::string Configuration::AttributesValues::process_id = "ProcessID";$/;"	m	class:geocoder::utils::logger::config::Configuration::AttributesValues	file:
+qnxnto	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	/^char const* qnxnto = "INFO" ":" "qnxnto[]";$/;"	v
+qnxnto	build/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* qnxnto = "INFO" ":" "qnxnto[]";$/;"	v
+range	inc/geo/location.h	/^  range,$/;"	m	class:geocoder::geo::Precision
+readFile	src/utils/logger/config.cpp	/^Configuration readFile(const boost::filesystem::path &filename)$/;"	f	namespace:geocoder::utils::logger::config
+readFromFile	src/main.cpp	/^Addresses readFromFile(const boost::filesystem::path &filename)$/;"	f
+readFromFile	test/test_utils.cpp	/^DataSet readFromFile(const boost::filesystem::path &filename)$/;"	f	namespace:geocoder::test
+region	inc/geo/location.h	/^  std::string region;$/;"	m	struct:geocoder::geo::Location
+rotation	inc/utils/logger/config.h	/^  Rotation                  rotation;$/;"	m	struct:geocoder::utils::logger::config::Configuration
+setConnTimeOut	src/utils/libcurl/libcurl.cpp	/^  void setConnTimeOut(std::uint32_t t)$/;"	f	class:geocoder::utils::curl::final
+setConnTimeOut	src/utils/libcurl/libcurl.cpp	/^void LibCurl::setConnTimeOut(std::uint32_t t)$/;"	f	class:geocoder::utils::curl::LibCurl
+setHeaders	src/utils/libcurl/libcurl.cpp	/^  void setHeaders(const std::string &encoding, const Headers &h)$/;"	f	class:geocoder::utils::curl::final
+setHeaders	src/utils/libcurl/libcurl.cpp	/^void LibCurl::setHeaders(const std::string &encoding, const Headers &h)$/;"	f	class:geocoder::utils::curl::LibCurl
+setTimeOut	src/utils/libcurl/libcurl.cpp	/^  void setTimeOut(std::uint32_t t)$/;"	f	class:geocoder::utils::curl::final
+setTimeOut	src/utils/libcurl/libcurl.cpp	/^void LibCurl::setTimeOut(std::uint32_t t)$/;"	f	class:geocoder::utils::curl::LibCurl
+setUserPassw	src/utils/libcurl/libcurl.cpp	/^  void setUserPassw(const std::string &login, const std::string &passw)$/;"	f	class:geocoder::utils::curl::final
+setUserPassw	src/utils/libcurl/libcurl.cpp	/^void LibCurl::setUserPassw(const std::string &login, const std::string &passw)$/;"	f	class:geocoder::utils::curl::LibCurl
+street	inc/geo/location.h	/^  std::string street;$/;"	m	struct:geocoder::geo::Location
+street	inc/geo/location.h	/^  street,$/;"	m	class:geocoder::geo::Precision
+suburb	inc/geo/location.h	/^  std::string suburb;$/;"	m	struct:geocoder::geo::Location
+test	test/test_utils.cpp	/^namespace test$/;"	n	namespace:geocoder	file:
+test	test/test_utils.h	/^namespace test$/;"	n	namespace:geocoder
+textToPrecision	src/geo/geoyandex.cpp	/^Precision textToPrecision(const std::string &precision)$/;"	f	namespace:geocoder::geo
+thread_id	inc/utils/logger/config.h	/^    static const std::string thread_id;$/;"	m	struct:geocoder::utils::logger::config::Configuration::AttributesValues
+thread_id	src/utils/logger/config.cpp	/^const std::string Configuration::AttributesValues::thread_id = "ThreadID";$/;"	m	class:geocoder::utils::logger::config::Configuration::AttributesValues	file:
+throwCurlError	src/utils/libcurl/libcurl.cpp	/^  void throwCurlError(CURLcode code, const std::string &source, const std::string &optname)$/;"	f	class:geocoder::utils::curl::final	file:
+throwCurlError	src/utils/libcurl/libcurl.cpp	/^  void throwCurlError(CURLcode code, std::string &&source, std::string &&optname)$/;"	f	class:geocoder::utils::curl::final	file:
+time	inc/utils/logger/config.h	/^      time,$/;"	m	class:geocoder::utils::logger::config::Configuration::Rotation::Type
+timeout_	src/geo/geocoderbase.cpp	/^  static const std::size_t timeout_;$/;"	m	class:geocoder::geo::final	file:
+timeout_	src/geo/geocoderbase.cpp	/^const std::size_t GeocoderBase::Impl::timeout_ = 100;$/;"	m	class:geocoder::geo::GeocoderBase::Impl	file:
+timestamp	inc/utils/logger/config.h	/^    static const std::string timestamp;$/;"	m	struct:geocoder::utils::logger::config::Configuration::AttributesValues
+timestamp	src/utils/logger/config.cpp	/^const std::string Configuration::AttributesValues::timestamp = "TimeStamp";$/;"	m	class:geocoder::utils::logger::config::Configuration::AttributesValues	file:
+type	inc/geo/answer.h	/^  GeocoderType type = GeocoderType::unknown;$/;"	m	class:geocoder::geo::Answer::GeocoderType
+unknown	inc/geo/answer.h	/^    unknown = -1,$/;"	m	class:geocoder::geo::Answer::GeocoderType
+utc	inc/utils/logger/config.h	/^    utc,$/;"	m	class:geocoder::utils::logger::config::Configuration::Time
+utils	inc/utils/libcurl/libcurl.h	/^namespace utils$/;"	n	namespace:geocoder
+utils	inc/utils/logger/config.h	/^namespace utils$/;"	n	namespace:geocoder
+utils	inc/utils/logger/logger.h	/^namespace utils$/;"	n	namespace:geocoder
+utils	inc/utils/logger/types.h	/^namespace utils$/;"	n	namespace:geocoder
+utils	inc/utils/parse_cmd.h	/^namespace utils$/;"	n	namespace:geocoder
+utils	inc/utils/utils.h	/^namespace utils$/;"	n	namespace:geocoder
+utils	src/utils/libcurl/libcurl.cpp	/^namespace utils$/;"	n	namespace:geocoder	file:
+utils	src/utils/logger/config.cpp	/^namespace utils$/;"	n	namespace:geocoder	file:
+utils	src/utils/logger/logger.cpp	/^namespace utils$/;"	n	namespace:geocoder	file:
+utils	src/utils/parse_cmd.cpp	/^namespace utils$/;"	n	namespace:geocoder	file:
+utils	src/utils/utils.cpp	/^namespace utils$/;"	n	namespace:geocoder	file:
+verbose	src/utils/libcurl/libcurl.cpp	/^  void verbose(bool enable)$/;"	f	class:geocoder::utils::curl::final
+verbose	src/utils/libcurl/libcurl.cpp	/^void LibCurl::verbose(bool enable)$/;"	f	class:geocoder::utils::curl::LibCurl
+verbose_	src/geo/geocoderbase.cpp	/^  static const bool verbose_;$/;"	m	class:geocoder::geo::final	file:
+verbose_	src/geo/geocoderbase.cpp	/^const bool GeocoderBase::Impl::verbose_ = false;$/;"	m	class:geocoder::geo::GeocoderBase::Impl	file:
+version	build/GeocoderVersion.h	/^namespace version$/;"	n	namespace:geocoder
+volatile	build/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c	11;"	d	file:
+warning	inc/utils/logger/logger.h	/^  warning,$/;"	m	class:geocoder::utils::logger::Severity
+workdir	inc/utils/logger/config.h	/^  boost::filesystem::path   workdir = boost::filesystem::current_path();$/;"	m	struct:geocoder::utils::logger::config::Configuration
+writer	src/utils/libcurl/libcurl.cpp	/^  static std::size_t writer(char *data, std::size_t size, std::size_t nmemb, void *buffer)$/;"	f	class:geocoder::utils::curl::final	file:
+yandex	inc/geo/answer.h	/^    yandex = 0$/;"	m	class:geocoder::geo::Answer::GeocoderType
+~CurlGlobalInitializator	src/utils/libcurl/libcurl.cpp	/^  ~CurlGlobalInitializator()$/;"	f	class:geocoder::utils::curl::final
+~Logger	src/utils/logger/logger.cpp	/^Logger::~Logger()$/;"	f	class:geocoder::utils::logger::Logger

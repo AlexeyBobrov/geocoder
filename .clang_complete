@@ -1,0 +1,7 @@
+-I.
+-I/opt/local/include
+-I/opt/local/gcc-8.3/include/c++/8.3.0
+-I/opt/local/gcc-8.3/include/c++/8.3.0/x86_64-pc-linux-gnu/
+-Ibuild/
+-Isrc/
+-Iinc/
