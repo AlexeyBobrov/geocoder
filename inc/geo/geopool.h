@@ -14,8 +14,8 @@
 #include <boost/property_tree/ptree.hpp>
 
 // this
-#include "geo/location.h"
 #include "geo/answer.h"
+#include "geo/location.h"
 
 namespace geocoder
 {
@@ -23,19 +23,20 @@ namespace geo
 {
 class GeoPool final
 {
-public:
+ public:
   explicit GeoPool(const boost::property_tree::ptree &conf);
   GeoPool(GeoPool &&);
   GeoPool &operator=(GeoPool &&);
   GeoPool(const GeoPool &) = delete;
   GeoPool &operator=(const GeoPool &) = delete;
   ~GeoPool();
-  Answer geocode(const std::string &address);  
-private:
+  Answer geocode(const std::string &address);
+
+ private:
   class Impl;
   std::unique_ptr<Impl> impl_;
 };
-}
-}
+}  // namespace geo
+}  // namespace geocoder
 
 #endif

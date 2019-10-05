@@ -15,6 +15,6 @@ namespace geo
 {
 GeocoderPtr createYandexGeocoder(const boost::property_tree::ptree &conf);
 }
-}
+}  // namespace geocoder
 
 #endif

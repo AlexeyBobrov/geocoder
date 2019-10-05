@@ -7,6 +7,7 @@
 #define GEOCODER_GEO_LOCATION_H_
 
 // std
+#include <stdexcept>
 #include <string>
 #include <vector>
 
@@ -18,19 +19,15 @@ struct Coordinates
 {
   /** @brief to gcc >= 5 to delete */
   Coordinates(double lat = 1000.0, double lon = 1000.0)
-    : latitude(lat)
-    , longitude(lon)
+   : latitude(lat)
+   , longitude(lon)
   {
   }
 
-  double latitude {1000.0};
-  double longitude {1000.0};
+  double latitude{1000.0};
+  double longitude{1000.0};
 
-  bool isValid() const
-  {
-    return ((longitude >= -180.0 && longitude <= 180.0) &&
-        (latitude >= -90.0 && latitude <= 90));
-  }
+  bool isValid() const { return ((longitude >= -180.0 && longitude <= 180.0) && (latitude >= -90.0 && latitude <= 90)); }
 };
 
 enum class Precision
@@ -90,7 +87,7 @@ inline Precision StringToPrecision(const std::string &prec)
   {
     return Precision::other;
   }
-  else 
+  else
   {
     throw std::runtime_error("[StringToPrecision]: unknown text precision");
   }
@@ -111,7 +108,7 @@ struct Location
 };
 
 using Locations = std::vector<Location>;
-}
-}
+}  // namespace geo
+}  // namespace geocoder
 
 #endif

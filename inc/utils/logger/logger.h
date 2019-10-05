@@ -8,9 +8,9 @@
 
 // Boost
 // logger
-#include <boost/log/sources/severity_logger.hpp>
 #include <boost/log/sources/global_logger_storage.hpp>
 #include <boost/log/sources/record_ostream.hpp>
+#include <boost/log/sources/severity_logger.hpp>
 // filesystem
 #include <boost/filesystem.hpp>
 
@@ -20,7 +20,7 @@ namespace utils
 {
 namespace logger
 {
-/** @enum Severity 
+/** @enum Severity
  *  @brief severity level logging
  */
 enum class Severity
@@ -38,20 +38,15 @@ using SeverityLogger = boost::log::sources::severity_logger_mt<Severity>;
 
 class Logger final
 {
-public:
- static void init();
- static void initFromFile(const boost::filesystem::path &filename);
- ~Logger();
+ public:
+  static void init();
+  static void initFromFile(const boost::filesystem::path &filename);
+  ~Logger();
 };
-}
-}
-}
+}  // namespace logger
+}  // namespace utils
+}  // namespace geocoder
 
 BOOST_LOG_GLOBAL_LOGGER(geo_logger, geocoder::utils::logger::SeverityLogger)
-
-
-    
-
-
 
 #endif

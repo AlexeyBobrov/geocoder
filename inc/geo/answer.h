@@ -6,6 +6,9 @@
 #ifndef GEOCODER_GEO_ANSWER_H_
 #define GEOCODER_GEO_ANSWER_H_
 
+// std
+#include <stdexcept>
+
 // this
 #include "geo/location.h"
 
@@ -33,11 +36,11 @@ struct Answer
         throw std::runtime_error("[Answer::GeoTypeToText]: unknown type geocoder");
     }
   }
-  
+
   Locations locations;
   GeocoderType type = GeocoderType::unknown;
 };
-}
-}
+}  // namespace geo
+}  // namespace geocoder
 
 #endif

@@ -14,7 +14,6 @@
 #include <boost/algorithm/string.hpp>
 #include <boost/test/unit_test.hpp>
 
-
 namespace geocoder
 {
 namespace test
@@ -23,14 +22,14 @@ namespace test
 DataSet readFromFile(const boost::filesystem::path &filename)
 {
   namespace fs = boost::filesystem;
-  
+
   if (!fs::exists(filename))
   {
     throw std::runtime_error("[readFromFile]: is not found file '" + filename.string() + "'");
   }
 
   std::ifstream fin(filename.string());
-  
+
   if (!fin.is_open())
   {
     throw std::runtime_error("[readFromFile]: is not open file '" + filename.string() + "'");
@@ -42,7 +41,7 @@ DataSet readFromFile(const boost::filesystem::path &filename)
   while (std::getline(fin, line))
   {
     std::vector<std::string> row;
-    
+
     boost::split(row, line, boost::is_any_of(";"));
 
     BOOST_CHECK(row.size() == 12);
@@ -62,13 +61,12 @@ DataSet readFromFile(const boost::filesystem::path &filename)
     loc.coord.longitude = std::stod(row[10]);
     loc.precision = geocoder::geo::StringToPrecision(row[11]);
 
-    result.emplace(line, loc);  
+    result.emplace(line, loc);
   }
-
 
   return result;
 }
 //--------------------------------------------------------------------------------------------
 
-}
-}
+}  // namespace test
+}  // namespace geocoder

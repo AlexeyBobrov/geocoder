@@ -5,12 +5,12 @@
  */
 
 // std
-#include <sstream>
 #include <map>
+#include <sstream>
 
 // boost
-#include <boost/property_tree/ptree.hpp>
 #include <boost/algorithm/string.hpp>
+#include <boost/property_tree/ptree.hpp>
 #include <boost/property_tree/xml_parser.hpp>
 
 // this
@@ -21,12 +21,11 @@ namespace geocoder
 {
 namespace geo
 {
-
 using GeoData = std::map<std::string, std::string>;
 
 void processTree(const boost::property_tree::ptree &pt, GeoData &data)
 {
-  for (const auto &i: pt.get_child(""))
+  for (const auto &i : pt.get_child(""))
   {
     const auto &name = i.first;
     auto desc = pt.get<std::string>(name);
@@ -67,7 +66,7 @@ Precision textToPrecision(const std::string &precision)
   {
     return Precision::other;
   }
-  else 
+  else
   {
     throw std::runtime_error("[textToPrecision]: is not found precision '" + precision + "'");
   }
@@ -75,12 +74,13 @@ Precision textToPrecision(const std::string &precision)
 
 class GeoYandex final : public GeocoderBase
 {
-public:
+ public:
   explicit GeoYandex(const boost::property_tree::ptree &conf)
-    : GeocoderBase(conf)
+   : GeocoderBase(conf)
   {
   }
-protected:
+
+ protected:
   virtual Result parse(const std::string &buffer)
   {
     namespace pt = boost::property_tree;
@@ -89,7 +89,7 @@ protected:
 
     Answer answer;
     answer.type = Answer::GeocoderType::yandex;
-    
+
     pt::ptree document;
     pt::read_xml(in, document);
 
@@ -108,13 +108,13 @@ protected:
           auto text_coord = data["pos"];
           std::vector<std::string> spl_coord;
           boost::split(spl_coord, text_coord, boost::is_any_of(" "));
-          
+
           Coordinates coord;
           coord.longitude = std::stof(spl_coord.at(0));
-          coord.latitude = std::stof(spl_coord.at(1));         
+          coord.latitude = std::stof(spl_coord.at(1));
 
           Location loc;
-        
+
           loc.line = data["AddressLine"];
 
           loc.country = data["CountryName"];
@@ -127,19 +127,16 @@ protected:
           loc.coord = coord;
           loc.precision = textToPrecision(data["precision"]);
 
-          
-
           answer.locations.push_back(std::move(loc));
-
         }
       }
     }
-   
+
     Result result;
     bool ret = (!answer.locations.empty()) ? true : false;
 
     return std::make_tuple(ret, answer);
-  } 
+  }
 };
 
 GeocoderPtr createYandexGeocoder(const boost::property_tree::ptree &conf)
@@ -147,6 +144,6 @@ GeocoderPtr createYandexGeocoder(const boost::property_tree::ptree &conf)
   GeocoderPtr result(new GeoYandex(conf));
   return result;
 }
-}
-}
+}  // namespace geo
+}  // namespace geocoder
 

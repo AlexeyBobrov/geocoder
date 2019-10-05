@@ -7,9 +7,9 @@
 #define GEOCODER_GEO_GEOCODERBASE_H_
 
 // std
-#include <tuple>
-#include <string>
 #include <memory>
+#include <string>
+#include <tuple>
 
 // boost
 #include <boost/property_tree/ptree_fwd.hpp>
@@ -23,9 +23,10 @@ namespace geo
 {
 class GeocoderBase
 {
-public:
+ public:
   using Result = std::tuple<bool, Answer>;
-public:
+
+ public:
   explicit GeocoderBase(const boost::property_tree::ptree &conf);
   GeocoderBase(GeocoderBase &&);
   GeocoderBase &operator=(GeocoderBase &&);
@@ -33,16 +34,17 @@ public:
   GeocoderBase &operator=(const GeocoderBase &) = delete;
   ~GeocoderBase();
   Result geocode(const std::string &address);
-protected:
+
+ protected:
   virtual Result parse(const std::string &buffer) = 0;
-private:
+
+ private:
   class Impl;
   std::unique_ptr<Impl> impl_;
-
 };
 
 using GeocoderPtr = std::unique_ptr<GeocoderBase>;
-}
-}
+}  // namespace geo
+}  // namespace geocoder
 
 #endif

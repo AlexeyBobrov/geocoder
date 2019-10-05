@@ -24,7 +24,7 @@ using DataSet = std::map<std::string, geo::Location>;
 /** @brief read data set from file */
 DataSet readFromFile(const boost::filesystem::path &filename);
 
-}
-}
+}  // namespace test
+}  // namespace geocoder
 
 #endif

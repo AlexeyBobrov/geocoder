@@ -7,22 +7,22 @@
 #include "utils/logger/logger.h"
 
 // std
-#include <memory>
 #include <array>
-#include <string>
 #include <functional>
+#include <memory>
+#include <string>
 
 // boost
 //  logger
-#include <boost/log/sources/severity_logger.hpp>
-#include <boost/log/sinks.hpp>
 #include <boost/log/attributes.hpp>
 #include <boost/log/core.hpp>
-#include <boost/log/sources/severity_feature.hpp>
+#include <boost/log/sinks.hpp>
 #include <boost/log/sources/record_ostream.hpp>
+#include <boost/log/sources/severity_feature.hpp>
+#include <boost/log/sources/severity_logger.hpp>
 //  memory
-#include <boost/shared_ptr.hpp>
 #include <boost/make_shared.hpp>
+#include <boost/shared_ptr.hpp>
 //  ptree
 #include <boost/property_tree/ptree.hpp>
 //  date_time
@@ -46,37 +46,35 @@ namespace utils
 {
 namespace logger
 {
-//-------------------------------------------------------------------------------------------- 
+//--------------------------------------------------------------------------------------------
 namespace sinks = boost::log::sinks;
 namespace sources = boost::log::sources;
 namespace keywords = boost::log::keywords;
 namespace attrs = boost::log::attributes;
 namespace log = boost::log;
-//-------------------------------------------------------------------------------------------- 
-std::array<std::string, static_cast<int>(Severity::trace) + 1> text_sev
-{
-  "INFO", "WARNING", "ERROR", "CRITICAL", "FATAL", "DEBUG", "TRACE"
-};
-//-------------------------------------------------------------------------------------------- 
+//--------------------------------------------------------------------------------------------
+std::array<std::string, static_cast<int>(Severity::trace) + 1> text_sev{"INFO", "WARNING", "ERROR", "CRITICAL", "FATAL", "DEBUG", "TRACE"};
+//--------------------------------------------------------------------------------------------
 using sev_log_t = sources::severity_logger_mt<Severity>;
 using file_sink_t = sinks::asynchronous_sink<sinks::text_file_backend>;
 using file_sink_ptr_t = boost::shared_ptr<file_sink_t>;
-using debug_sink_t = sinks::asynchronous_sink<sinks::text_ostream_backend>;using debug_sink_ptr_t = boost::shared_ptr<debug_sink_t>;
+using debug_sink_t = sinks::asynchronous_sink<sinks::text_ostream_backend>;
 using debug_sink_ptr_t = boost::shared_ptr<debug_sink_t>;
-//-------------------------------------------------------------------------------------------- 
+using debug_sink_ptr_t = boost::shared_ptr<debug_sink_t>;
+//--------------------------------------------------------------------------------------------
 // configure attributes
 void init_attrs(const config::Configuration &conf)
-{ 
+{
   const auto &attrs = conf.attributes;
 
-  for (const auto &attr: attrs)
+  for (const auto &attr : attrs)
   {
     using config::Configuration;
-    
+
     if (attr.second)
     {
       if (attr.first == Configuration::AttributesValues::process_id)
-      {       
+      {
         log::core::get()->add_global_attribute(Configuration::AttributesValues::process_id.data(), log::attributes::current_process_id());
       }
       else if (attr.first == Configuration::AttributesValues::thread_id)
@@ -86,7 +84,7 @@ void init_attrs(const config::Configuration &conf)
       else if (attr.first == Configuration::AttributesValues::timestamp)
       {
         if (conf.time_type == Configuration::Time::utc)
-        {         
+        {
           log::core::get()->add_global_attribute(Configuration::AttributesValues::timestamp.data(), log::attributes::utc_clock());
         }
         else if (conf.time_type == Configuration::Time::local)
@@ -105,22 +103,19 @@ void init_attrs(const config::Configuration &conf)
     }
   }
 }
-//-------------------------------------------------------------------------------------------- 
+//--------------------------------------------------------------------------------------------
 // format message
 void format(const config::Configuration &conf, const log::record_view &record, log::formatting_ostream &os)
-{ 
+{
   auto sev = record.attribute_values()["Severity"].extract<Severity>().get();
   auto text = text_sev[static_cast<int>(sev)];
-  
+
   std::ostringstream tmp;
 
-  auto format_attr = [&tmp](const auto &val)
-  {
-    tmp << "[" << val << "]";
-  };
-   
+  auto format_attr = [&tmp](const auto &val) { tmp << "[" << val << "]"; };
+
   const auto &attrs = conf.attributes;
-  
+
   if (attrs.at(config::Configuration::AttributesValues::timestamp))
   {
     const auto timestamp = log::extract<boost::posix_time::ptime>("TimeStamp", record).get();
@@ -129,31 +124,30 @@ void format(const config::Configuration &conf, const log::record_view &record, l
 
   if (attrs.at(config::Configuration::AttributesValues::thread_id))
   {
-    const auto thread_id = log::extract<log::attributes::current_thread_id::value_type>(
-        config::Configuration::AttributesValues::thread_id.data(), record).get();
+    const auto thread_id =
+        log::extract<log::attributes::current_thread_id::value_type>(config::Configuration::AttributesValues::thread_id.data(), record).get();
     format_attr(thread_id);
   }
 
   if (attrs.at(config::Configuration::AttributesValues::process_id))
   {
-    const auto process_id = log::extract<log::attributes::current_process_id::value_type>(
-        config::Configuration::AttributesValues::process_id.data(), record).get();
+    const auto process_id =
+        log::extract<log::attributes::current_process_id::value_type>(config::Configuration::AttributesValues::process_id.data(), record).get();
     format_attr(process_id);
-  } 
-  
+  }
+
   format_attr(text);
 
   const auto msg = record.attribute_values()["Message"].extract<std::string>().get();
   tmp << ": " << msg;
 
   os << tmp.str();
-  
 }
-//-------------------------------------------------------------------------------------------- 
+//--------------------------------------------------------------------------------------------
 file_sink_ptr_t createFileSink(const config::Configuration &conf)
 {
   namespace fs = boost::filesystem;
-  
+
   fs::path filename;
   if (fs::exists(conf.workdir))
   {
@@ -174,15 +168,11 @@ file_sink_ptr_t createFileSink(const config::Configuration &conf)
   {
     backend = boost::make_shared<file_text_backend_t>(
         keywords::file_name = filename.string(),
-        keywords::time_based_rotation = sinks::file::rotation_at_time_interval(
-          boost::posix_time::seconds(conf.rotation.period)));
+        keywords::time_based_rotation = sinks::file::rotation_at_time_interval(boost::posix_time::seconds(conf.rotation.period)));
   }
   else if (conf.rotation.type == config::Configuration::Rotation::Type::size)
   {
-    backend = boost::make_shared<file_text_backend_t>(
-        keywords::file_name = filename.string(),
-        keywords::rotation_size = conf.rotation.size
-        );
+    backend = boost::make_shared<file_text_backend_t>(keywords::file_name = filename.string(), keywords::rotation_size = conf.rotation.size);
   }
   else
   {
@@ -195,7 +185,7 @@ file_sink_ptr_t createFileSink(const config::Configuration &conf)
 
   return tmp;
 }
-//-------------------------------------------------------------------------------------------- 
+//--------------------------------------------------------------------------------------------
 debug_sink_ptr_t createDebugSink(const config::Configuration &conf)
 {
   auto debug_backend = boost::make_shared<log::sinks::text_ostream_backend>();
@@ -204,10 +194,10 @@ debug_sink_ptr_t createDebugSink(const config::Configuration &conf)
   auto sink = boost::make_shared<debug_sink_t>(debug_backend);
   auto fn = std::bind(format, conf, std::placeholders::_1, std::placeholders::_2);
   sink->set_formatter(fn);
-  
+
   return sink;
 }
-//-------------------------------------------------------------------------------------------- 
+//--------------------------------------------------------------------------------------------
 // init logger
 void initLog(const config::Configuration &conf)
 {
@@ -218,7 +208,7 @@ void initLog(const config::Configuration &conf)
 
   // create file sink
   auto file_sink = createFileSink(conf);
- 
+
   if (conf.stdoutput)
   {
     // creating debug log
@@ -229,25 +219,22 @@ void initLog(const config::Configuration &conf)
 
   core->add_sink(file_sink);
 }
-//-------------------------------------------------------------------------------------------- 
+//--------------------------------------------------------------------------------------------
 /** @brief implementation of the class Logger */
 void Logger::init()
 {
   // default settings
-  initLog(config::Configuration()); 
+  initLog(config::Configuration());
 }
-//-------------------------------------------------------------------------------------------- 
+//--------------------------------------------------------------------------------------------
 void Logger::initFromFile(const boost::filesystem::path &filename)
 {
   const auto conf = config::readFile(filename);
   initLog(conf);
 }
-//-------------------------------------------------------------------------------------------- 
-Logger::~Logger()
-{
-  log::core::get()->remove_all_sinks();
-}
 //--------------------------------------------------------------------------------------------
-}
-}
-}
+Logger::~Logger() { log::core::get()->remove_all_sinks(); }
+//--------------------------------------------------------------------------------------------
+}  // namespace logger
+}  // namespace utils
+}  // namespace geocoder

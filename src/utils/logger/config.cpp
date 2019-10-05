@@ -1,8 +1,8 @@
 /** @file config.cpp
-  * @brief the implementation config
-  * @author Bobrov A.E.
-  * @date 09.07.2016
-  */
+ * @brief the implementation config
+ * @author Bobrov A.E.
+ * @date 09.07.2016
+ */
 // boost
 // property tree
 #include <boost/property_tree/ptree.hpp>
@@ -26,7 +26,7 @@ namespace config
 {
 namespace fs = boost::filesystem;
 namespace pt = boost::property_tree;
-//-------------------------------------------------------------------------------------------- 
+//--------------------------------------------------------------------------------------------
 const std::string Configuration::AttributesValues::process_id = "ProcessID";
 const std::string Configuration::AttributesValues::thread_id = "ThreadID";
 const std::string Configuration::AttributesValues::timestamp = "TimeStamp";
@@ -39,7 +39,7 @@ Configuration readFile(const boost::filesystem::path &filename)
   }
 
   pt::ptree document;
-  
+
   pt::read_xml(filename.string(), document);
   Configuration conf;
 
@@ -63,8 +63,7 @@ Configuration readFile(const boost::filesystem::path &filename)
       }
       else
       {
-        throw std::runtime_error("[logger::config::readFile]: invalid time type '" + time_type
-          + "', filename ='" + filename.string() + "'");
+        throw std::runtime_error("[logger::config::readFile]: invalid time type '" + time_type + "', filename ='" + filename.string() + "'");
       }
 
       if (const auto rotation = log_conf->get_child_optional("rotation"))
@@ -83,14 +82,13 @@ Configuration readFile(const boost::filesystem::path &filename)
         }
         else
         {
-          throw std::runtime_error("[logger::config::readFile]: invalid rotation type '" + type
-            + "', filename = '" + filename.string() + "'");
+          throw std::runtime_error("[logger::config::readFile]: invalid rotation type '" + type + "', filename = '" + filename.string() + "'");
         }
       }
 
       for (auto &i : conf.attributes)
       {
-        auto key( std::get<0>(i) );
+        auto key(std::get<0>(i));
         boost::to_lower(key);
         const auto value = log_conf->get_optional<bool>("attributes." + key);
         if (value)
@@ -112,12 +110,11 @@ Configuration readFile(const boost::filesystem::path &filename)
   }
   catch (const std::exception &err)
   {
-    throw std::runtime_error("[logger::config::readFile]: failed read file '" + std::string(err.what())
-      + "' filename = '" + filename.string() + "'");
+    throw std::runtime_error("[logger::config::readFile]: failed read file '" + std::string(err.what()) + "' filename = '" + filename.string() + "'");
   }
 }
 //---------------------------------------------------------------------------------------------------------
-}
-}
-}
-}
+}  // namespace config
+}  // namespace logger
+}  // namespace utils
+}  // namespace geocoder

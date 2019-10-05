@@ -8,8 +8,8 @@
 #include <iomanip>
 
 // boost
-#include <boost/property_tree/ptree.hpp>
 #include <boost/format.hpp>
+#include <boost/property_tree/ptree.hpp>
 
 // this
 #include "geo/geocoderbase.h"
@@ -30,9 +30,10 @@ class GeocoderBase::Impl final
   static const std::size_t timeout_;
   static const std::size_t conntimeout_;
   static const bool verbose_;
-public:
+
+ public:
   explicit Impl(const boost::property_tree::ptree &conf)
-  { 
+  {
     auto &logger = geo_logger::get();
     BOOST_LOG_SEV(logger, utils::logger::Severity::info) << "[GeocoderBase::Impl::Impl]: Start initialization geocoder...";
 
@@ -62,7 +63,7 @@ public:
     {
       throw std::runtime_error("[GeocoderBase::Impl::Impl]: Failed initialization, is not exists config section 'connection'");
     }
-    
+
     BOOST_LOG_SEV(logger, utils::logger::Severity::info) << "[GeocoderBase:Impl::Impl]: Complete initization.";
   }
   Impl(Impl &&) = default;
@@ -73,26 +74,27 @@ public:
   std::tuple<std::string, long> get(const std::string &addr)
   {
     std::string url;
-    std::size_t timeout {};
-    std::size_t conntimeout {};
-    bool verbose {};
+    std::size_t timeout{};
+    std::size_t conntimeout{};
+    bool verbose{};
 
     std::tie(url, timeout, conntimeout, verbose) = conn_param_;
-  
+
     curl_.setTimeOut(timeout);
     curl_.setConnTimeOut(conntimeout);
     curl_.verbose(verbose);
-    
+
     const auto request = url + addr;
-    
+
     auto &logger = geo_logger::get();
     BOOST_LOG_SEV(logger, utils::logger::Severity::trace) << "[GeocoderBase::Impl::Impl]: resuest '" << request << "'";
 
     return curl_.get(request);
   }
-  
+
   const std::string &getName() const { return name_; }
-private:
+
+ private:
   utils::curl::LibCurl curl_;
   std::string name_;
   std::tuple<std::string, std::size_t, std::size_t, bool> conn_param_;
@@ -101,17 +103,17 @@ private:
 const std::size_t GeocoderBase::Impl::timeout_ = 100;
 const std::size_t GeocoderBase::Impl::conntimeout_ = 100;
 const bool GeocoderBase::Impl::verbose_ = false;
-//-------------------------------------------------------------------------------------------- 
+//--------------------------------------------------------------------------------------------
 GeocoderBase::GeocoderBase(const boost::property_tree::ptree &conf)
-  : impl_(new Impl(conf))
+ : impl_(new Impl(conf))
 {
 }
-//-------------------------------------------------------------------------------------------- 
+//--------------------------------------------------------------------------------------------
 GeocoderBase::Result GeocoderBase::geocode(const std::string &address)
 {
   // get data from geocoder
   std::string buffer;
-  long code {};
+  long code{};
   std::tie(buffer, code) = impl_->get(address);
 
   // > 400 - error clients
@@ -126,6 +128,6 @@ GeocoderBase::Result GeocoderBase::geocode(const std::string &address)
 
   return parse(buffer);
 }
-//-------------------------------------------------------------------------------------------- 
-}
-}
+//--------------------------------------------------------------------------------------------
+}  // namespace geo
+}  // namespace geocoder

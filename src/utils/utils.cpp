@@ -15,25 +15,23 @@ namespace geocoder
 {
 namespace utils
 {
-//-------------------------------------------------------------------------------------------- 
-std::string generateFileName(const std::string &prefix, const std::string &ext, 
-    const boost::posix_time::ptime &t,
-    const std::string &mask)
+//--------------------------------------------------------------------------------------------
+std::string generateFileName(const std::string &prefix, const std::string &ext, const boost::posix_time::ptime &t, const std::string &mask)
 {
   std::locale loc(std::cout.getloc(), new boost::posix_time::time_facet(mask.c_str()));
 
   std::ostringstream filename;
   filename.imbue(loc);
-  
+
   filename << prefix << "_" << t << "." << ext;
 
-  return filename.str();    
+  return filename.str();
 }
-//-------------------------------------------------------------------------------------------- 
-boost::filesystem::path getRealFileName(const boost::filesystem::path& fileName)
+//--------------------------------------------------------------------------------------------
+boost::filesystem::path getRealFileName(const boost::filesystem::path &fileName)
 {
   namespace fs = boost::filesystem;
-  
+
   fs::path result;
   if (!fs::exists(fileName.relative_path()))
   {
@@ -48,5 +46,5 @@ boost::filesystem::path getRealFileName(const boost::filesystem::path& fileName)
   return result;
 }
 //---------------------------------------------------------------------------------------------
-}
-}
+}  // namespace utils
+}  // namespace geocoder

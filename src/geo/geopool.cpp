@@ -11,8 +11,8 @@
 #include <boost/property_tree/ptree.hpp>
 
 // this
-#include "geo/geopool.h"
 #include "geo/geocoderbase.h"
+#include "geo/geopool.h"
 #include "geo/geoyandex.h"
 #include "utils/logger/logger.h"
 
@@ -20,14 +20,14 @@ namespace geocoder
 {
 namespace geo
 {
-//-------------------------------------------------------------------------------------------- 
+//--------------------------------------------------------------------------------------------
 GeoPool::GeoPool(GeoPool &&) = default;
 GeoPool &GeoPool::operator=(GeoPool &&) = default;
 GeoPool::~GeoPool() = default;
-//-------------------------------------------------------------------------------------------- 
+//--------------------------------------------------------------------------------------------
 class GeoPool::Impl final
 {
-public:
+ public:
   explicit Impl(const boost::property_tree::ptree &conf)
   {
     using utils::logger::Severity;
@@ -52,7 +52,6 @@ public:
       BOOST_LOG_SEV(logger, Severity::warning) << "[GeoPool::Impl::Impl]: is not found 'document.geocoders'";
     }
 
-
     BOOST_LOG_SEV(logger, Severity::info) << "[GeoPool::Impl::Impl]: Complete initialization.";
   }
 
@@ -60,7 +59,7 @@ public:
   {
     Answer result;
 
-    for (const auto &g: geocoders_)
+    for (const auto &g : geocoders_)
     {
       try
       {
@@ -74,31 +73,28 @@ public:
       catch (const std::exception &err)
       {
         auto &logger = geo_logger::get();
-        BOOST_LOG_SEV(logger, utils::logger::Severity::warning) << "[GeoPool::Impl::get]: failed request data, '"
-          << err.what() << "'";
+        BOOST_LOG_SEV(logger, utils::logger::Severity::warning) << "[GeoPool::Impl::get]: failed request data, '" << err.what() << "'";
       }
     }
 
     return result;
   }
-  
+
   Impl(Impl &&) = default;
   Impl &operator=(Impl &&) = default;
   Impl(const Impl &) = delete;
   Impl &operator=(const Impl &) = delete;
-private:
+
+ private:
   std::vector<GeocoderPtr> geocoders_;
 };
-//-------------------------------------------------------------------------------------------- 
+//--------------------------------------------------------------------------------------------
 GeoPool::GeoPool(const boost::property_tree::ptree &conf)
-  : impl_(new Impl(conf))
+ : impl_(new Impl(conf))
 {
 }
-//-------------------------------------------------------------------------------------------- 
-Answer GeoPool::geocode(const std::string &addr)
-{
-  return impl_->get(addr);
-}
-//-------------------------------------------------------------------------------------------- 
-}
-}
+//--------------------------------------------------------------------------------------------
+Answer GeoPool::geocode(const std::string &addr) { return impl_->get(addr); }
+//--------------------------------------------------------------------------------------------
+}  // namespace geo
+}  // namespace geocoder
